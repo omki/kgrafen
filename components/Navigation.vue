@@ -1,7 +1,5 @@
 <template>
-  <section class="navigation">
-
-  </section>
+  <section class="navigation"/>
 </template>
 
 <script>

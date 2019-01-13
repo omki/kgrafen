@@ -35,18 +35,21 @@ html {
   margin: 0;
 }
 
-.button--green {
+.button--yellow {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border: 2px solid #fbd96e;
+  color: #fbd96e;
   text-decoration: none;
   padding: 10px 30px;
+  text-shadow: 1px 1px rgba(255, 0, 0, 0.67843);
+  font-weight: 500;
+  font-size: 20px;
+  box-shadow: 2px 2px 1px 0px rgba(255, 0, 0, 0.67843);
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.button--yellow:hover {
+  background-color: rgba(255, 0, 0, 0.47843);
 }
 
 .button--grey {

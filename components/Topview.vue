@@ -10,7 +10,7 @@
     <div class="links">
       <a
         href="#page"
-        class="button--green">Explore</a>
+        class="button--yellow">Explore</a>
     </div>
   </section>
 </template>
@@ -33,6 +33,7 @@ export default {
   text-align: center;
   background: url('../assets/images/graphenemodel.jpg');
   background-repeat: no-repeat;
+  background-size: 100% 100vh;
 }
 
 .title {
