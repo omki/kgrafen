@@ -1,8 +1,18 @@
 <template>
   <div>
+    <topview/>
     <nuxt/>
   </div>
 </template>
+
+<script>
+import Topview from '@/components/Topview.vue'
+export default {
+  components: {
+    Topview
+  }
+}
+</script>
 
 <style>
 html {
@@ -15,6 +25,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
