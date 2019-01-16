@@ -1,47 +1,27 @@
 <template>
-  <section class="navigation"/>
+  <section class="navigation">
+    <nuxt-link to="/">Home</nuxt-link>
+    <nuxt-link to="/contact">Contact us</nuxt-link>
+    <nuxt-link to="/social">Social media</nuxt-link>
+    <nuxt-link to="/projects">Projects</nuxt-link>
+    <nuxt-link to="/mission_vision">Mission & Vision</nuxt-link>
+    <nuxt-link to="/forum">Forum</nuxt-link>
+    <nuxt-link to="/declaration_terms">Declaration & Terms</nuxt-link>
+  </section>
 </template>
 
 <script>
-import Logo from './Logo.vue'
+import Coin from './coin.vue'
 export default {
+  scrollToTop: false,
   components: {
-    Logo
+    Coin
   }
 }
 </script>
 
 <style>
-.navigation {
-  padding-top: 60px;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: url('../assets/images/graphenemodel.jpg');
-  background-repeat: no-repeat;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+a {
   display: block;
-  font-weight: 500;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-  color: #fbd96e;
-  text-shadow: 2px 2px #ff0000ad;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 24px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-  color: #fbd96e;
-  text-shadow: 2px 2px #ff0000ad;
-  font-weight: 500;
 }
 </style>

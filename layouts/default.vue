@@ -1,17 +1,30 @@
 <template>
   <div>
     <topview/>
-    <nuxt/>
+    <div class="left-side-navigation">
+      <navigation/>
+    </div>
+    <div class="right-side-content">
+      <nuxt/>
+    </div>
   </div>
 </template>
 
 <script>
 import Topview from '@/components/Topview.vue'
+import Navigation from '@/components/Navigation.vue'
 export default {
   components: {
-    Topview
+    Topview,
+    Navigation
+  },
+  mounted(){
+  if (process.client && window) {
+    window.history.scrollRestoration = 'auto';
   }
 }
+}
+
 </script>
 
 <style>
@@ -25,7 +38,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 *,
@@ -65,5 +78,15 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.left-side-navigation {
+  float: left;
+  width: 20%;
+}
+
+.right-side-content {
+  float: left;
+  width: 80%;
 }
 </style>
