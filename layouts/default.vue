@@ -17,14 +17,8 @@ export default {
   components: {
     Topview,
     Navigation
-  },
-  mounted(){
-  if (process.client && window) {
-    window.history.scrollRestoration = 'auto';
   }
 }
-}
-
 </script>
 
 <style>
@@ -38,7 +32,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 *,
