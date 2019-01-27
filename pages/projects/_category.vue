@@ -41,6 +41,7 @@ import { Route } from 'vue-router'
     },
     methods: {
       async writeToFirestore() {
+        if (this.videoId.length!=11) return
         const ref = fireDb.collection("videos").doc(this.videoId)
         const document = {
           text: this.videoId,
