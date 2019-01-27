@@ -21,23 +21,23 @@
 <script>
 export default {
   props: {
-      title: {
-        default: 'empty',
-        type: String
-      },
-      link: {
-        default: '/',
-        type: String
-      },
-      topColor: {
-        default: 'yellow',
-        type: String
-      },
-      sideColor: {
-        default: 'pink',
-        type: String
-      }
+    title: {
+      default: 'empty',
+      type: String
+    },
+    link: {
+      default: '/',
+      type: String
+    },
+    topColor: {
+      default: 'yellow',
+      type: String
+    },
+    sideColor: {
+      default: 'pink',
+      type: String
     }
+  }
 }
 </script>
 

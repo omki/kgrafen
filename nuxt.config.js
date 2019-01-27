@@ -12,7 +12,10 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
-      { name: 'google-site-verification', content: 'zd43zGcgKeV2nOz2J44QnWCx1QYbO75peKPSpGhtlhY' },
+      {
+        name: 'google-site-verification',
+        content: 'zd43zGcgKeV2nOz2J44QnWCx1QYbO75peKPSpGhtlhY'
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
@@ -30,7 +33,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: ['~/plugins/firebase.js'],
 
   /*
   ** Nuxt.js modules

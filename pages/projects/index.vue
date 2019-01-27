@@ -5,7 +5,16 @@
 
       <div class="float-full">
         <div class="float-half-left">
-          <img src="../assets/images/KSGrafenFields.png">
+          <div class="category-links">
+            <nuxt-link to="/projects/Energie Odnawialne">Energie Odnawialne</nuxt-link> ~ 
+            <nuxt-link to="/projects/Elektronika">Elektronika</nuxt-link> ~ 
+            <nuxt-link to="/projects/Elektromobilność">Elektromobilność</nuxt-link> ~ 
+            <nuxt-link to="/projects/Materiały">Materiały</nuxt-link> ~ 
+            <nuxt-link to="/projects/Elektrotechnika">Elektrotechnika</nuxt-link> ~ 
+            <nuxt-link to="/projects/Kompozyty">Kompozyty</nuxt-link>
+          </div>
+
+          <img src="../../assets/images/KSGrafenFields.png">
           Polski Komitet Naukowy SEP do spraw Technologii Grafenowej ~ kierunki badawczo popularyzatorskie
         </div>
 
@@ -177,5 +186,9 @@ article {
 .float-text {
   float: right;
   width: 68%;
+}
+.category-links {
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 </style>

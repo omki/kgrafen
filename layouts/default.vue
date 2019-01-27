@@ -23,6 +23,8 @@ export default {
 
 <style>
 html {
+  background: #fff6d5;
+  color: #765e00;
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 12px;
