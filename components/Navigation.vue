@@ -1,12 +1,12 @@
 <template>
   <section class="navigation">
-    <nuxt-link to="/">Home</nuxt-link>
-    <nuxt-link to="/contact">Contact us</nuxt-link>
-    <nuxt-link to="/social">Social media</nuxt-link>
-    <nuxt-link to="/projects">Projects</nuxt-link>
-    <nuxt-link to="/mission_vision">Mission & Vision</nuxt-link>
-    <nuxt-link to="/forum">Forum</nuxt-link>
-    <nuxt-link to="/declaration_terms">Declaration & Terms</nuxt-link>
+    <coin top-color="#4087C7" side-color="#4074A2" title="Home" link="/"></coin>
+    <coin top-color="#FBAA28" side-color="#C99032" title="Contact us" link="/contact"></coin>
+    <coin top-color="#EA99EE" side-color="#BD82BF" title="Social media" link="/social"></coin>
+    <coin top-color="#96D9EE" side-color="#7FAFBF" title="Projects" link="/projects"></coin>
+    <coin top-color="#8FEC70" side-color="#7BBE64" title="Mission & Vision" link="/mission_vision"></coin>
+    <coin top-color="#FFED0D" side-color="#CBBE1B" title="Forum" link="/forum"></coin>
+    <coin top-color="#BB5770" side-color="#9B5364" title="Declaration & Terms" link="/declaration_terms"></coin>
   </section>
 </template>
 

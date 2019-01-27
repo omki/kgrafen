@@ -1,34 +1,65 @@
 <template>
-  <div id="tridiv">
-    <div 
-      class="scene" 
-      style="-webkit-transform:rotateX(348deg) rotateY(1234deg); -moz-transform:rotateX(348deg) rotateY(1234deg); -ms-transform:rotateX(348deg) rotateY(1234deg); transform:rotateX(348deg) rotateY(1234deg); ">
-      <div class="shape cylinder-1 cyl-1">
-        <div class="face bm"/>
-        <div class="face tp"/>
-        <div class="face side s0"/>
-        <div class="face side s1"/>
-        <div class="face side s2"/>
-        <div class="face side s3"/>
-        <div class="face side s4"/>
-        <div class="face side s5"/>
-        <div class="face side s6"/>
-        <div class="face side s7"/>
-        <div class="face side s8"/>
-        <div class="face side s9"/>
-        <div class="face side s10"/>
-        <div class="face side s11"/>
-        <div class="face side s12"/>
-        <div class="face side s13"/>
-        <div class="face side s14"/>
-        <div class="face side s15"/>
+  <div id="coin-wrap" v-bind:style="{zoom: 0.5}">
+    <div class="coin-container">
+    <div class="coin-title" v-bind:style="{'color' : topColor}">{{title}}</div>
+      <div id="tridiv">
+        <div
+          class="scene"
+          style="-webkit-transform:rotateX(348deg) rotateY(1234deg); -moz-transform:rotateX(348deg) rotateY(1234deg); -ms-transform:rotateX(348deg) rotateY(1234deg); transform:rotateX(348deg) rotateY(1234deg); "
+        >
+          <nuxt-link v-bind:to="link"><div class="shape cylinder-1 cyl-1">
+            <div class="face bm"/>
+            <div class="face tp" v-bind:style="{'background-color' : topColor}"/>
+            <div v-for="face in 16" :key="face" v-bind:class="'face side s' + face" v-bind:style="{'background-color' : sideColor}"/>
+          </div></nuxt-link>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
+<script>
+export default {
+  props: {
+      title: {
+        default: 'empty',
+        type: String
+      },
+      link: {
+        default: '/',
+        type: String
+      },
+      topColor: {
+        default: 'yellow',
+        type: String
+      },
+      sideColor: {
+        default: 'pink',
+        type: String
+      }
+    }
+}
+</script>
+
 <style>
 /* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */
+
+.coin-container {
+  position: relative;
+  height: 120px;
+  text-align: center;
+}
+.coin-title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 28px;
+  filter: brightness(30%);
+  line-height: 1;
+  pointer-events: none;
+}
 #tridiv {
   perspective: 800px;
   position: absolute;
@@ -123,7 +154,7 @@
   width: 2.411948408555896em;
   height: 1em;
 }
-.cyl-1 .s0 {
+.cyl-1 .s16 {
   transform: rotateY(11.25deg) translate3D(-50%, 0, 5.975em);
 }
 .cyl-1 .s1 {
@@ -171,11 +202,10 @@
 .cyl-1 .s15 {
   transform: rotateY(348.75deg) translate3D(-50%, 0, 5.975em);
 }
-.cyl-1 .face,
-.cyl-1 .side {
-  background-color: #d3c83d;
-}
-.cyl-1 .tp {
-  background-color: #fdeb0e;
+.cyl-1:hover .face ,
+.cyl-1:hover .side,
+.cyl-1:hover .tp {
+  filter: brightness(125%);
+  cursor: pointer;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="VueToNuxtLogo">
-    <img src="../assets/images/pcs_graphene_octa.png" >
+    <img src="../assets/images/psc_graphene.png" >
   </div>
 </template>
 
@@ -14,7 +14,7 @@
 
 .VueToNuxtLogo img {
   width: 100%;
-  animation: turn 2s linear forwards 1s;
+  animation: turn 2s linear forwards;
 }
 
 @keyframes turn {
