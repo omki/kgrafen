@@ -1,5 +1,5 @@
 <template>
-  <div id="coin-wrap" v-bind:style="{zoom: 0.5}">
+  <div id="coin-wrap" v-bind:style="{zoom: 0.6}">
     <div class="coin-container">
     <div class="coin-title" v-bind:style="{'color' : topColor}">{{title}}</div>
       <div id="tridiv">
@@ -46,7 +46,7 @@ export default {
 
 .coin-container {
   position: relative;
-  height: 120px;
+  height: 90px;
   text-align: center;
 }
 .coin-title {
@@ -55,7 +55,7 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  font-size: 28px;
+  font-size: 20px;
   filter: brightness(30%);
   line-height: 1;
   pointer-events: none;

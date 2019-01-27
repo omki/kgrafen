@@ -25,7 +25,7 @@ export default {
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -40,6 +40,14 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
 }
 
 .button--yellow {
@@ -83,4 +91,20 @@ html {
   float: left;
   width: 80%;
 }
+
+.float-full {
+  float: left;
+  width: 100%;
+}
+
+.float-half-left {
+  float: left;
+  width: 49%;
+}
+
+.float-half-right {
+  float: right;
+  width: 49%;
+}
+
 </style>

@@ -1,7 +1,9 @@
 <template>
   <section id="page">
     <div class="page-container">
-      Polish Science Committee in charge by APEE for Graphene Technology ~ Contact us
+      <h1>Polish Science Committee in charge by APEE for Graphene Technology ~ Contact us</h1>
+      <br/>
+      Send us email at komitetgrafen@gmail.com
     </div>
   </section>
 </template>
