@@ -78,6 +78,9 @@ module.exports = {
       } else {
         return { x: false, y: false }
       }
+    },
+    sitemap: {
+      generate: true
     }
   }
 }
