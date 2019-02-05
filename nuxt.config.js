@@ -82,6 +82,7 @@ module.exports = {
     }
   },
   sitemap: {
+    hostname: 'https://kgrafen.netlify.com',
     generate: true
   }
 }
