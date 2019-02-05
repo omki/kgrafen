@@ -2,6 +2,16 @@
   <div>
     <h2>Dodaj video do kategorii {{category}}</h2>
     <div class="insert-video">
+      
+      <!-- search -->
+      <div class="field">
+        <div class="control has-icons-left">
+          <input class="input is-success" type="text" v-model="searchTerm" @input="searchTermChange" />
+          <!-- <b-icon icon="magnify"></b-icon> -->
+        </div>
+        <p class="help">Search YouTube videos.</p>
+      </div>
+
       <input type="text" v-model="videoId" placeholder="wprowadź id video z YouTube" class="insert-video-input">
       <button @click="writeToFirestore">
         <span>Dodaj</span>
@@ -25,6 +35,8 @@
 <script lang="ts">
 import {fireDb} from '../../plugins/firebase.js'
 import { Route } from 'vue-router'
+import YouTubeSearch from 'youtube-api-search';
+import _ from 'lodash';
 
   export default {
     data() {
@@ -32,12 +44,17 @@ import { Route } from 'vue-router'
         videoId: "",
         category: '',
         videos: [],
-        selectedVideo: ''
+        selectedVideo: '',
+        show: false,
+        // video: null,
+        searchTerm: 'Surfing',
+        searchedvideos: [],
       }
     },
     created() {
       this.category = this.$route.params.category // this should not throw TS errors now
       this.readFromFirestore()
+      this.videoSearch('Surfing')
     },
     methods: {
       async writeToFirestore() {
@@ -73,7 +90,23 @@ import { Route } from 'vue-router'
       },
       selectVideo(videoId) {
         this.selectedVideo = videoId
-      }
+      },
+      videoSearch(searchTerm) {
+        YouTubeSearch( {key: 'AIzaSyAkfWLJzhLVGxE0onSNBWpg3gc-kX_Xvl8', term: searchTerm}, (videos) => {
+          console.log('videos', videos)
+          this.searchedvideos = videos;
+          // get the first video (before one is selected --this is the default)
+          this.selectedVideo = videos[0];
+          this.show = true;
+        });
+      },
+      videoSelect(video) {
+        this.selectedVideo = video;
+      },
+      searchTermChange: _.debounce( function () {
+        //  pass event up to parent App.vue
+        this.$emit('termChange', this.searchTerm);
+      }, 400)
     }
   }
 

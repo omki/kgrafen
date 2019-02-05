@@ -14,11 +14,13 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@grpc/proto-loader": "^0.4.0",
     "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
     "firebase": "^5.8.1",
     "nuxt": "^2.2.0",
-    "vue-i18n": "^8.7.0"
+    "vue-i18n": "^8.7.0",
+    "youtube-api-search": "0.0.5"
   },
   "devDependencies": {
     "nodemon": "^1.11.0",

@@ -155,52 +155,52 @@ export default {
   height: 1em;
 }
 .cyl-1 .s16 {
-  transform: rotateY(11.25deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(11.25deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s1 {
-  transform: rotateY(33.75deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(33.75deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s2 {
-  transform: rotateY(56.25deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(56.25deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s3 {
-  transform: rotateY(78.75deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(78.75deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s4 {
-  transform: rotateY(101.25deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(101.25deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s5 {
-  transform: rotateY(123.75deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(123.75deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s6 {
-  transform: rotateY(146.25deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(146.25deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s7 {
-  transform: rotateY(168.75deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(168.75deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s8 {
-  transform: rotateY(191.25deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(191.25deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s9 {
-  transform: rotateY(213.75deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(213.75deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s10 {
-  transform: rotateY(236.25deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(236.25deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s11 {
-  transform: rotateY(258.75deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(258.75deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s12 {
-  transform: rotateY(281.25deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(281.25deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s13 {
-  transform: rotateY(303.75deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(303.75deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s14 {
-  transform: rotateY(326.25deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(326.25deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1 .s15 {
-  transform: rotateY(348.75deg) translate3D(-50%, 0, 5.975em);
+  transform: rotateY(348.75deg) translate3D(-50%, 0, 5.9em);
 }
 .cyl-1:hover .face ,
 .cyl-1:hover .side,
