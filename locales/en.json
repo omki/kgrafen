@@ -1,0 +1,33 @@
+{
+  "page": {
+    "header": {
+      "title": "Polish Science Committee in charge by APEE for Graphene Technology",
+      "button_text": "Explore"
+    }
+  },
+  "pages": {
+    "home": {
+      "pillars_caption": "Activity pillars"
+    }
+  },
+  "home": {
+    "lang": {"title": "Language"}
+  },
+  "navigation": {
+    "home": "Home",
+    "contact": "Contact us",
+    "social": "Social media",
+    "projects": "Projects",
+    "mission_vision": "Mission & Vision",
+    "forum": "Forum",
+    "declaration_terms": "Declaration & Terms"
+  },
+  "sidebar": {
+    "lang": {"title": "Language", "link": "about"}, 
+    "menu": {"title": "Menu", "link": "menu"}, 
+    "contact": {"title": "Contact Us", "link": "contact"}
+  }
+
+  
+  
+}

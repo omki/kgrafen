@@ -1,7 +1,7 @@
 <template>
   <section id="page">
     <div class="page-container">
-      Polish Science Committee in charge by APEE for Graphene Technology ~ Mission & Vision
+      <h1>{{$t('page.header.title')}} ~ {{$t('navigation.mission_vision')}}</h1>
     </div>
   </section>
 </template>

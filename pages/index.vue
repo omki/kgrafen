@@ -1,12 +1,12 @@
 <template>
   <section id="page">
     <div class="page-container">
-      <h1>Polish Science Committee in charge by APEE for Graphene Technology</h1>
+      <h1>{{$t('page.header.title')}}</h1>
 
       <div class="float-full">
         <div class="float-half-left">
           <img src="../assets/images/KSGrafenSymbolTrans50.png">
-          Polski Komitet Naukowy SEP do spraw Technologii Grafenowej ~ filary działalności
+          {{$t('page.header.title')}} ~ {{$t('pages.home.pillars_caption')}}
         </div>
 
         <div class="float-half-right">

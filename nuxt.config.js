@@ -33,7 +33,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['~/plugins/firebase.js'],
+  plugins: ['~/plugins/firebase.js', 'plugins/i18n.js'],
 
   /*
   ** Nuxt.js modules
@@ -73,6 +73,7 @@ module.exports = {
     }
   },
   router: {
+    middleware: ['i18n'],
     scrollBehavior: function(to, from, savedPosition) {
       if (savedPosition) {
         return savedPosition

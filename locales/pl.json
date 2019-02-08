@@ -1,0 +1,30 @@
+{
+  "page": {
+    "header": {
+      "title": "Polski Komitet Naukowy SEP do spraw Technologii Grafenowej",
+      "button_text": "Eksploruj"
+    }
+  },
+  "pages": {
+    "home": {
+      "pillars_caption": "filary działalności"
+    }
+  },
+  "navs": {
+    "about": {"title": "About", "link": "about"}, 
+    "menu": {"title": "Menu", "link": "menu"}, 
+    "contact": {"title": "Contact Us", "link": "contact"}
+  },
+  "home": {
+    "lang": {"title": "Jezyk"}
+  },
+  "navigation": {
+    "home": "Strona domowa",
+    "contact": "Skontaktuj sie z nami",
+    "social": "Media spolecznosciowe",
+    "projects": "Projekty",
+    "mission_vision": "Misja i Wizja",
+    "forum": "Forum",
+    "declaration_terms": "Deklaracja i zasady"
+  }
+}

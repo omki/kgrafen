@@ -5,12 +5,12 @@
       KGrafen
     </h1>
     <h2 class="subtitle">
-      Polish Science Committee in charge by APEE for Graphene Technology
+      {{$t('page.header.title')}}
     </h2>
     <div class="links">
       <a
         href="#page"
-        class="button--yellow">Explore</a>
+        class="button--yellow">{{$t('page.header.button_text')}}</a>
     </div>
   </section>
 </template>

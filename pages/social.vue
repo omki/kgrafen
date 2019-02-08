@@ -1,7 +1,7 @@
 <template>
   <section id="page">
     <div class="page-container">
-      Polish Science Committee in charge by APEE for Graphene Technology ~ Social media
+      <h1>{{$t('page.header.title')}} ~ {{$t('navigation.social')}}</h1>
     </div>
   </section>
 </template>

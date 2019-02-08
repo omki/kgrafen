@@ -1,7 +1,7 @@
 <template>
   <section id="page">
     <div class="page-container">
-      <h1>Polish Science Committee in charge by APEE for Graphene Technology ~ Projects</h1>
+      <h1>{{$t('page.header.title')}} ~ {{$t('navigation.projects')}}</h1>
 
       <div class="float-full">
         <div class="float-half-left">
