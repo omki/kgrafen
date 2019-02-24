@@ -14,6 +14,12 @@
       </select> 
     </div>
 
+    <div class="kgrafen-symbol">
+      <img :src= "require('../assets/images/kgrafen_symbol_' + $store.state.locale + '.png')">
+      <p> {{$t('page.header.title')}}</p>
+    </div>
+
+
   </section>
 </template>
 
@@ -52,7 +58,10 @@ export default {
 </script>
 
 <style>
-.choose-language {
-  padding: 30px;
-}
+  .choose-language {
+    padding: 30px;
+  }
+  .kgrafen-symbol {
+    padding: 20px;
+  }
 </style>
