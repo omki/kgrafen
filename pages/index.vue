@@ -5,45 +5,46 @@
 
       <div class="float-full">
         <div class="float-half-left">
-          <img src="../assets/images/KSGrafenSymbolTrans50.png">
+          <img :src= "'_nuxt/assets/images/activities_'+$store.state.locale+'.png'">
           {{$t('page.header.title')}} ~ {{$t('pages.home.pillars_caption')}}
         </div>
 
         <div class="float-half-right">
+          
+          <h2>{{$t('pages.home.headline.title')}}</h2>
+          <div>{{$t('pages.home.headline.description')}}</div>
 
-          Program assumptions
-          Issues of the SEP Committee on graphene technology - KS Grafen fully complies with the implementation of the statutory activity of SEP based mainly on the six pillars of activity:
-
-          Activities
-          Mobilizing
-          Archiving
-          Research
-          Commercial
-          Scientific
-          Popularization
-          Ad.1. Mobilizing Activity
-          Activating activities are primarily based on the work of the SEP Committee for Technology, (symbol) KS Grafen with additional thematic groups.
-
-          Ad.2. Archiving Activity
-          The archiving activity is based on the creation of databases, literature, patent databases, reports, reviews, summaries of research results.
-
-          Ad.3. Research Activity
-          The research activity is based on the active involvement of the Committee in the consortia formed with the Scientific and Research Units consisting in sharing their own source materials.
-
-          Ad.4. Commercial Activity
-          The commercialization activity is aimed at creating a structure aiming at commercialization of scientific and research projects based on cooperation with SMEs, OBR, institutes in the consortium with the aim of selecting within the committee its own structure allowing for commercial projects (eg grants) within the SEP Committee to graphene technology.
-
-          Ad.5. Scientific Activity
-          Scientific activity is to carry out systematic and reviewing works and their publications.
-
-          Ad.6. Popularization Activity
-          Promotional activity is aimed at developing Polish and foreign publications, books, contributing to the technical press and the SEP newsletter, creating expert and advisory work, running advertising campaigns, and supporting the literature in the thematic scope of KS Grafen.
+          <div class="activity" v-for="(item, index) in activities" :key="index">
+            <div class="activity-title">Ad.{{index + 1}}. {{$t('pages.home.activities.' + item.title + '.title')}}</div>
+            <div class="activity-description">{{$t('pages.home.activities.' + item.title + '.description')}}</div>
+          </div>
+          
         </div>
       </div>
     </div>
 
   </section>
 </template>
+
+<script lang="ts">
+
+  export default {
+    data() {
+      return {
+        activities: [
+          {title: 'Mobilizing'},
+          {title: 'Archiving'},
+          {title: 'Research'},
+          {title: 'Commercial'},
+          {title: 'Scientific'},
+          {title: 'Popularization'},
+        ]
+      }
+    }
+
+  }
+
+</script>
 
 <style>
 .page-container {
@@ -52,5 +53,10 @@
 
 .links {
   padding-top: 15px;
+}
+
+.activity-title {
+  margin-top: 20px;
+  font-weight: bold;
 }
 </style>

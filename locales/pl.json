@@ -7,7 +7,16 @@
   },
   "pages": {
     "home": {
-      "pillars_caption": "filary działalności"
+      "pillars_caption": "filary działalności",
+      "headline": { "title": "Założenia programowe", "description": "Problematyka Komitetu SEP do spraw Technologii Grafenowej ~ KS Grafen w pełni wpisuje się w realizacje statutowej działalności SEP opierajac się głównie na sześciu filarach działalności:"},
+      "activities": {
+        "Mobilizing": { "title": "Działalność aktywizująca", "description": "Działalność aktywizująca w pierwszym rzędzie opiera się na pracy Komitetu SEP do spraw Technologii, (symbol) KS Grafen z dodatkowo utworzonymi zespołami tematycznymi."},
+        "Archiving": { "title": "Dzialalnosc archiwizujaca", "description": "Działalność archiwizująca bazuje na tworzeniu baz danych, literaturowych, patentowych, raport, przeglądów, zestawień wyników badań."},
+        "Research": { "title": "Dzialalnosc badawcza", "description": "Działalność badawcza opiera się na aktywnym włączeniu się Komitetu do tworzonych konsorcjów z Jednostkami Naukowo Badawczymi polegającym na udostępnianiu własnych materiałów źródłowych."},
+        "Commercial": { "title": "Działalność komercjalizacyjna", "description": "Działalność komercjalizacyjna ma za zadanie wytworzenie struktury mającej na celu komercjalizację projektów naukowo badawczych w oparciu o współpracę z MŚP, OBR, instytutów w konsorcjum z docelowym dążeniem do wyłonienia w ramach komitetu własnej struktury pozwalającej na prowadzenie projektów komercyjnych (np grantów) w ramach Komitetu SEP do spraw Technologii Grafenowej"},
+        "Scientific": { "title": "Działalność naukowe", "description": "Działalność naukowa ma za zadanie prowadzenie prac systematyzujących i przeglądowych i ich publikacje."},
+        "Popularization": { "title": "Działalność popularyzatorska", "description": "Działalność popularyzatorska ma za zadanie opracowywanie polskich i zagranicznych publikacji, książek, wnosić wkład do prasy technicznej i newslettera SEP, tworzenie prac opiniodawczych i eksperckich, prowadzenie kampanii reklamowych, wsparcie piśmiennictwa w zakresie tematycznym KS Grafen."}
+      }
     }
   },
   "navs": {

@@ -3,7 +3,7 @@
     <div class="page-container">
       <h1>{{$t('page.header.title')}} ~ {{$t('navigation.contact')}}</h1>
       <br/>
-      {{$t('pages.contact.send_email')}} <a href="mailto:komitetgrafen@gmail.com">komitetgrafen@gmail.com</a>
+      Send us email at komitetgrafen@gmail.com
     </div>
   </section>
 </template>
