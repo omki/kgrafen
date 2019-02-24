@@ -5,7 +5,7 @@
 
       <div class="float-full">
         <div class="float-half-left">
-          <img :src= "'_nuxt/assets/images/activities_'+$store.state.locale+'.png'">
+          <img :src= "require('../assets/images/activities_' + $store.state.locale + '.png')">
           {{$t('page.header.title')}} ~ {{$t('pages.home.pillars_caption')}}
         </div>
 
