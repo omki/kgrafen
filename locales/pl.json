@@ -17,6 +17,16 @@
         "Scientific": { "title": "Działalność naukowe", "description": "Działalność naukowa ma za zadanie prowadzenie prac systematyzujących i przeglądowych i ich publikacje."},
         "Popularization": { "title": "Działalność popularyzatorska", "description": "Działalność popularyzatorska ma za zadanie opracowywanie polskich i zagranicznych publikacji, książek, wnosić wkład do prasy technicznej i newslettera SEP, tworzenie prac opiniodawczych i eksperckich, prowadzenie kampanii reklamowych, wsparcie piśmiennictwa w zakresie tematycznym KS Grafen."}
       }
+    },
+    "mision_vision": {
+      "mission": {
+        "title": "Misja",
+        "content": "Polski Komitet Naukowy SEP ds. Technologii Grafenowej, w skrócie K~Grafen, służy wspieraniu projektów opierających się o wiedzę z dziedzin mobilizacji, archiwizacji, badań, nauki, popularyzacji i komercjalizacji we współpracy ze środowiskiem inżynierów i naukowców SEP. W ramach inicjatyw KGrafen miesci się misja Fundacji Quantum, mająca rację bytu w idei stworzonej i propagowanej przez Polski Komitet Naukowy SEP ds. Technologii Grafenowej, polegającej na realizacji wyżej wymiemionych projektów. Polski Komitet Naukowy SEP ds. Technologii Grafenowej bazuje na aktywnym wspieraniu idei niosących pożytek dla społeczeństwa."
+      },
+      "vision": {
+        "title": "Wizja",
+        "content": "Wizją Polskiego Komitetu Naukowego SEP ds. Technologii Grafenowej jest stworzenie systemu wsparcia dla rozwoju projektów mających na celu tworzenie zaktywizowanych społeczności, zespołów, lobby i wdrożenia innowacyjnych technologii elektrotechnicznych, głównie materiałowych (sensory grafenowe), konstrukcyjnych (ogniwa grafenowe) informacyjnych (AI), kwantowych, intelektualnych w relacji ze strukturami sieci informatycznych i webowych."
+      }
     }
   },
   "navs": {

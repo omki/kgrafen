@@ -13,9 +13,19 @@
         "Mobilizing": { "title": "Mobilizing activity", "description": "Activating activities are primarily based on the work of the SEP Committee for Technology, (symbol) KS Grafen with additional thematic groups."},
         "Archiving": { "title": "Archiving activity", "description": "The archiving activity is based on the creation of databases, literature, patent databases, reports, reviews, summaries of research results."},
         "Research": { "title": "Research activity", "description": "The research activity is based on the active involvement of the Committee in the consortia formed with the Scientific and Research Units consisting in sharing their own source materials."},
-        "Commercial": { "title": "Commercial activity", "description": "The commercialization activity is aimed at creating a structure aiming at commercialization of scientific and research projects based on cooperation with SMEs, OBR, institutes in the consortium with the aim of selecting within the committee its own structure allowing for commercial projects (eg grants) within the SEP Committee to graphene technology."},
+        "Commercial": { "title": "Commercial activity", "description": "The commercialization activity is aimed at creating a structure aiming at commercialization of scientific and research projects based on cooperation with SMEs, OBR, institutes in the consortium with the aim of selecting within the committee its own structure allowing for commercial projects (eg grants) within the APEE Committee to graphene technology."},
         "Scientific": { "title": "Scientific activity", "description": "Scientific activity is to carry out systematic and reviewing works and their publications."},
         "Popularization": { "title": "Popularization activity", "description": "Promotional activity is aimed at developing Polish and foreign publications, books, contributing to the technical press and the SEP newsletter, creating expert and advisory work, running advertising campaigns, and supporting the literature in the thematic scope of KS Grafen."}
+      }
+    },
+    "mision_vision": {
+      "mission": {
+        "title": "Mission",
+        "content": "The Polish Scientific Committee in charge by APEE for Graphene Technology, abbreviated K~Grafen, supports projects based on knowledge in the fields of mobilization, archives, research, science, popularization and commercialization in cooperation with the APEE engineers and scientists environment. Quantum Foundation mission is part of the KGrafen initiatives, having the right to exist in the idea created and promoted by the Polish Scientific Committee in charge by APEE for Graphene Technology, involving the implementation of the above mentioned projects. in charge by APEE for Graphene Technology is based on the active support for ideas that bring benefits to society."
+      },
+      "vision": {
+        "title": "Vision",
+        "content": "The vision of the Polish Scientific Committee in charge by APEE for Graphene Technology is to create a support system for the development of projects which aim to create activated communities, teams, lobbies and implementation of innovative electrotechnical technologies such as material (graphene sensors), construction (graphene cells), information (AI), quantum, intellectual in relation to the structures of information and web networks."
       }
     },
     "contact": {
