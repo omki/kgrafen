@@ -26,6 +26,10 @@
       "vision": {
         "title": "Wizja",
         "content": "Wizją Polskiego Komitetu Naukowego SEP ds. Technologii Grafenowej jest stworzenie systemu wsparcia dla rozwoju projektów mających na celu tworzenie zaktywizowanych społeczności, zespołów, lobby i wdrożenia innowacyjnych technologii elektrotechnicznych, głównie materiałowych (sensory grafenowe), konstrukcyjnych (ogniwa grafenowe) informacyjnych (AI), kwantowych, intelektualnych w relacji ze strukturami sieci informatycznych i webowych."
+      },
+      "captions": {
+        "week_in_sep": "Tydzień w SEP",
+        "zebranie_sep": "Zebranie inauguracyjne Rady Naukowo-Technicznej SEP"
       }
     }
   },

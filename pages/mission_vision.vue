@@ -5,18 +5,16 @@
       <div class="float-full">
         <div class="float-half-left">
           <div class="float-half-left">
-            <iframe 
-              src="https://sep.com.pl/tydzienSEP/2017/tydzien_w_SEP_147.pdf" 
-              height="500"
-              frameborder="0">
-              </iframe>
+            <a :href="urls.tydzienWSepUrl" target="_blank">
+              <img src="../assets/images/articles/tydzien_w_sep.png" alt="">
+            </a>
+            {{$t('pages.mision_vision.captions.week_in_sep')}}
           </div>
           <div class="float-half-right">
-            <iframe 
-              src="https://graphenequantec.files.wordpress.com/2019/03/zebranie-inauguracyjne-rady-naukowo-technicznej-sep-rnt-sep.pdf" 
-              height="500"
-              frameborder="0">
-              </iframe>
+            <a :href="urls.zebranieSepUrl" target="_blank">
+              <img src="../assets/images/articles/zebranie_sep.png" alt="">
+            </a>
+            {{$t('pages.mision_vision.captions.zebranie_sep')}}
           </div>
         </div>
         <div class="float-half-right">
@@ -32,19 +30,37 @@
 
 <script>
 export default {
+  data() {
+    return {
+      urls: {
+        tydzienWSepUrl: "https://sep.com.pl/tydzienSEP/2017/tydzien_w_SEP_147.pdf",
+        zebranieSepUrl: "https://graphenequantec.files.wordpress.com/2019/03/zebranie-inauguracyjne-rady-naukowo-technicznej-sep-rnt-sep.pdf"
+      }
+    }
+  },
   scrollToTop: false,
 }
 </script>
 
 <style>
-h2 {
+h2:not(:first-child) {
   margin-top: 20px;
 }
 .page-container {
   height: 2000px;
-}
+} 
 
 .links {
   padding-top: 15px;
+}
+
+.float-half-left.smaller {
+  float: left;
+  width: 46%;
+}
+
+.float-half-right.smaller {
+  float: right;
+  width: 46%;
 }
 </style>
