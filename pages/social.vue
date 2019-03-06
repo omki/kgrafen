@@ -21,7 +21,7 @@
 
       <div class="column-3" fxFlex="30">
         <div class="socialimage">
-          <img src="../assets/images/social/twitter.png" alt="">
+          <img src="../assets/images/social/facebook.png" alt="">
         </div>
         <no-ssr>
           <div class="fb-page" data-href="https://www.facebook.com/KGrafen/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/KGrafen/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/KGrafen/">Polski Komitet Naukowy SEP ds Technologii grafenowej</a></blockquote></div>
