@@ -6,7 +6,7 @@
       {{$t('pages.contact.send_email')}} <a href="mailto:komitetgrafen@gmail.com">komitetgrafen@gmail.com</a>
 
       <div class="accessForm">
-        <h2>Proszę o przyjęcie mnie w poczet członków komitetu</h2>
+        <h2>Proszę o przyjęcie mnie w poczet Członków Polskiego Komitetu SEP ds. Technologii Grafenowej</h2>
         <div class="name">Imię i Nazwisko <input type="text"></div>
         <div class="email">Email <input type="text"></div>
         <div class="telephone">Telefon <input type="text"></div>
