@@ -28,6 +28,16 @@
         </no-ssr>
       </div>
 
+      <div class="column-3" fxFlex="30">
+        <div class="socialimage">
+          <img src="../assets/images/social/wordpress.png" alt="">
+        </div>
+        <a href="http://graphenequantec.wordpress.com" target="_blank">
+          <img src="../assets/images/graphene.png" alt="">
+          Polish Science Committee in charge by Association of Polish Electrical Engineers for Graphene Technology.
+        </a>
+      </div>
+
     </div>
   </section>
 </template>
@@ -95,7 +105,7 @@ export default {
   display: inline-grid;
   margin-top: 30px;
   text-align: center;
-  width: 33.33%;
+  width: 30%;
 }
 
 .socialimage img {
