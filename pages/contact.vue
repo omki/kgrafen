@@ -4,7 +4,9 @@
       <h1>{{$t('page.header.title')}} ~ {{$t('navigation.contact')}}</h1>
       <br/>
       {{$t('pages.contact.send_email')}} <a href="mailto:komitetgrafen@gmail.com">komitetgrafen@gmail.com</a>
-
+      <br/><br/>
+      {{$t('pages.contact.join_video_conference_room')}} <a href="http://appear.in/grafen" target="_blank">appear.in/grafen</a>
+      <br/><br/>
       <div class="accessForm">
         <h2>Proszę o przyjęcie mnie w poczet Członków Polskiego Komitetu SEP ds. Technologii Grafenowej</h2>
         <div class="name">Imię i Nazwisko <input type="text"></div>

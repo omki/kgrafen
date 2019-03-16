@@ -33,7 +33,8 @@
       }
     },
     "contact": {
-      "send_email": "Send us email at"
+      "send_email": "Send us email at",
+      "join_video_conference_room": "Join Video Conference Room @"
     }
   },
   "home": {

@@ -31,6 +31,10 @@
         "week_in_sep": "Tydzień w SEP",
         "zebranie_sep": "Zebranie inauguracyjne Rady Naukowo-Technicznej SEP"
       }
+    },
+    "contact": {
+      "send_email": "Wyślij nam wiadomość na",
+      "join_video_conference_room": "Dołącz do pokoju video konferencji na"
     }
   },
   "navs": {
