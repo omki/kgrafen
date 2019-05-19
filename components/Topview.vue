@@ -1,7 +1,7 @@
 <template>
   <section class="topview">
     <div class="aspect-ratio-header">
-      <iframe src="https://www.youtube.com/embed/jrOESc_vBh4?autoplay=1" frameborder="0"
+      <iframe src="https://www.youtube.com/embed/jrOESc_vBh4?autoplay=1&rel=0" frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
       <div class="header">
         <logo/>

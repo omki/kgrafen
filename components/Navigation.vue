@@ -1,16 +1,17 @@
 <template>
   <section class="navigation">
     <coin
-      v-for="item in navigation_items"
+      v-for="(item, name, index) in navigation_items"
       :key="item.id"
       :topColor="item.topColor"
       :sideColor="item.sideColor"
+      :index="doMath(index)"
       :title="$t('navigation.'+item.title)"
       :link="item.link +'?lang='+$store.state.locale"
     ></coin>
 
     <!-- <canvas id="renderCanvas" touch-action="none"></canvas> -->
-    <nuxt-link v-bind:to="'/fullerene?lang='+$store.state.locale">
+    <nuxt-link v-bind:to="'/fullerene'">
       <div class="fullerene">
         <div class="aspect-ratio-fullerene">
           <iframe src="https://grafen.surge.sh/" frameborder="0" width="100%"></iframe>
@@ -111,6 +112,10 @@ export default {
       this.$router.push({
         path: `${this.$router.currentRoute.path}?lang=${this.key}`
       })
+    },
+    doMath: function (index) {
+      console.log({index});
+      return index+1
     }
   }
 }
@@ -123,7 +128,10 @@ export default {
 .kgrafen-symbol {
   padding: 20px;
 }
-
+.navigation {
+  display: grid;
+  margin-top: 36px;
+}
 .fullerene {
   margin: 20px 20px 0;
   box-sizing: border-box;
