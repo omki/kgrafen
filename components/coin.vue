@@ -157,6 +157,10 @@ export default {
   width: 12em;
   height: 1em;
   margin: -0.5em 0 0 -6em;
+  animation: rotating 8s linear infinite;
+}
+.cyl-1:hover {
+  animation: rotating 4s linear infinite;
 }
 .cyl-1 .tp,
 .cyl-1 .bm {
@@ -220,5 +224,14 @@ export default {
 .cyl-1:hover .tp {
   filter: brightness(125%);
   cursor: pointer;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 </style>
