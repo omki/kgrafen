@@ -5,6 +5,14 @@
     <coin v-for="item in navigation_items" :key="item.id" :topColor="item.topColor" 
     :sideColor="item.sideColor" :title="$t('navigation.'+item.title)" :link="item.link +'?lang='+$store.state.locale"></coin>
 
+    <!-- <canvas id="renderCanvas" touch-action="none"></canvas> -->
+    <div class="fullerene">
+      <div class="aspect-ratio">
+        <iframe src="http://grafen.surge.sh/" frameborder="0" width="100%"></iframe>
+      </div>
+      {{$t('page.header.title')}} ~ {{$t('navigation.fullerene')}}
+    </div>
+
     <div class="choose-language">
       <p> {{$t('home.lang.title')}}</p>
 
@@ -27,6 +35,16 @@
 import Coin from './coin.vue'
 
 export default {
+  // head() {
+  //   return {
+  //     script: [
+  //       { src: 'https://preview.babylonjs.com/babylon.js' },
+  //       { src: 'https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js' },
+  //       { src: 'https://code.jquery.com/pep/0.4.3/pep.js' },
+  //       { src: 'http://grafen.surge.sh/sphere.js' }
+  //     ]
+  //   }
+  // },
   data() {
     return {
       key: "",
@@ -63,5 +81,22 @@ export default {
   }
   .kgrafen-symbol {
     padding: 20px;
+  }
+  
+  .fullerene {
+    margin: 20px 20px 0;
+    box-sizing: border-box;
+  }
+  .aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+  }
+  .aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0;
   }
 </style>

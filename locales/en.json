@@ -47,7 +47,8 @@
     "projects": "Projects",
     "mission_vision": "Mission & Vision",
     "forum": "Forum",
-    "declaration_terms": "Declaration & Terms"
+    "declaration_terms": "Declaration & Terms",
+    "fullerene": "fullerene C60"
   },
   "sidebar": {
     "lang": {"title": "Language", "link": "about"}, 
