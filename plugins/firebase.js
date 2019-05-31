@@ -3,12 +3,13 @@ import 'firebase/firestore'
 
 if (!firebase.apps.length) {
   const config = {
-    apiKey: 'AIzaSyALc1120c_32LBEBXXg6pMIUMONZQabW7A',
-    authDomain: 'testproject-cd3c7.firebaseapp.com',
-    databaseURL: 'https://testproject-cd3c7.firebaseio.com',
-    projectId: 'testproject-cd3c7',
-    storageBucket: '',
-    messagingSenderId: '891473916224'
+    apiKey: "AIzaSyBrwZ_3HSDJPbYV33gVnTAoYF3p7mV9d1Q",
+    authDomain: "kgrafen-485e3.firebaseapp.com",
+    databaseURL: "https://kgrafen-485e3.firebaseio.com",
+    projectId: "kgrafen-485e3",
+    storageBucket: "kgrafen-485e3.appspot.com",
+    messagingSenderId: "755575610405",
+    appId: "1:755575610405:web:a5864a6b641d0412"
   }
   firebase.initializeApp(config)
 }
