@@ -1,20 +1,27 @@
 <template>
-  <div id="coin-wrap" v-bind:style="{zoom: 0.6}">
-    <div class="coin-container">
-    <div class="coin-title" v-bind:style="{'color' : topColor}">{{title}}</div>
-      <div id="tridiv">
-        <div
-          class="scene"
-          style="-webkit-transform:rotateX(348deg) rotateY(1234deg); -moz-transform:rotateX(348deg) rotateY(1234deg); -ms-transform:rotateX(348deg) rotateY(1234deg); transform:rotateX(348deg) rotateY(1234deg); "
-        >
-          <nuxt-link v-bind:to="link"><div class="shape cylinder-1 cyl-1">
-            <div class="face bm"/>
-            <div class="face tp" v-bind:style="{'background-color' : topColor}"/>
-            <div v-for="face in 16" :key="face" v-bind:class="'face side s' + face" v-bind:style="{'background-color' : sideColor}"/>
-          </div></nuxt-link>
+  <div id="coin-wrap" v-bind:style="{'z-index': -index + 10}">
+    <nuxt-link v-bind:to="link">
+      <div class="coin-container">
+        <div class="coin-title" v-bind:style="{'color' : topColor}">{{title}}</div>
+        <div id="tridiv">
+          <div
+            class="scene"
+            style="-webkit-transform:rotateX(348deg) rotateY(1234deg); -moz-transform:rotateX(348deg) rotateY(1234deg); -ms-transform:rotateX(348deg) rotateY(1234deg); transform:rotateX(348deg) rotateY(1234deg); "
+          >
+            <div class="shape cylinder-1 cyl-1">
+              <div class="face bm"/>
+              <div class="face tp" v-bind:style="{'background-color' : topColor}"/>
+              <div
+                v-for="face in 16"
+                :key="face"
+                v-bind:class="'face side s' + face"
+                v-bind:style="{'background-color' : sideColor}"
+              />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </nuxt-link>
   </div>
 </template>
 
@@ -36,6 +43,10 @@ export default {
     sideColor: {
       default: 'pink',
       type: String
+    },
+    index: {
+      default: 0,
+      type: Number
     }
   }
 }
@@ -43,7 +54,9 @@ export default {
 
 <style>
 /* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */
-
+#coin-wrap {
+  margin-top: -28px;
+}
 .coin-container {
   position: relative;
   height: 90px;
@@ -55,7 +68,7 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  font-size: 20px;
+  font-size: 16px;
   filter: brightness(30%);
   line-height: 1;
   pointer-events: none;
@@ -144,6 +157,10 @@ export default {
   width: 12em;
   height: 1em;
   margin: -0.5em 0 0 -6em;
+  animation: rotating 8s linear infinite;
+}
+.cyl-1:hover {
+  animation: rotating 4s linear infinite;
 }
 .cyl-1 .tp,
 .cyl-1 .bm {
@@ -202,10 +219,19 @@ export default {
 .cyl-1 .s15 {
   transform: rotateY(348.75deg) translate3D(-50%, 0, 5.975em);
 }
-.cyl-1:hover .face ,
+.cyl-1:hover .face,
 .cyl-1:hover .side,
 .cyl-1:hover .tp {
   filter: brightness(125%);
   cursor: pointer;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 </style>
