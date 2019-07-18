@@ -29,6 +29,9 @@
         <no-ssr>
           <div class="fb-page" data-href="https://www.facebook.com/graphenenews/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/graphenenews/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/graphenenews/">Graphene Quantum Technology</a></blockquote></div>
         </no-ssr>
+        <no-ssr>
+          <div class="fb-page" data-href="https://www.facebook.com/Graphene-Electrodes-Implanted-1149904715019877/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Graphene-Electrodes-Implanted-1149904715019877/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Graphene-Electrodes-Implanted-1149904715019877/">Graphene Electrodes Implanted</a></blockquote></div>
+        </no-ssr>
       </div>
 
       <div class="column-3" fxFlex="30">
@@ -109,6 +112,10 @@ export default {
   margin-top: 30px;
   text-align: center;
   width: 30%;
+}
+
+no-ssr {
+  margin-bottom: 20px;
 }
 
 .socialimage img {
