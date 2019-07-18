@@ -33,6 +33,8 @@
       <img :src="require('../assets/images/kgrafen_symbol_' + $store.state.locale + '.png')">
       <p>{{$t('page.header.title')}}</p>
     </div>
+
+    <div class="maps"></div>
   </section>
 </template>
 
@@ -98,6 +100,11 @@ export default {
         }
       }
     }
+  },
+  mounted() {
+    let recaptchaScript = document.createElement('script')
+    recaptchaScript.setAttribute('src', '//rf.revolvermaps.com/0/0/6.js?i=54em053ze4w&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80')
+    document.querySelector('.maps').appendChild(recaptchaScript)
   },
   scrollToTop: false,
   components: {
