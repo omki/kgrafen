@@ -62,6 +62,9 @@ export default {
   height: 90px;
   text-align: center;
 }
+.coin-container:hover {
+  font-weight: bold;
+}
 .coin-title {
   position: absolute;
   top: 45%;
