@@ -63,8 +63,8 @@ export default {
           link: '/'
         },
         contact: {
-          topColor: '#FBAA28',
-          sideColor: '#C99032',
+          topColor: '#ad92ff',
+          sideColor: '#9373f5',
           title: 'contact',
           link: '/contact'
         },
@@ -93,10 +93,16 @@ export default {
           link: '/forum'
         },
         declaration_terms: {
-          topColor: '#BB5770',
-          sideColor: '#9B5364',
+          topColor: '#FBAA28',
+          sideColor: '#C99032',
           title: 'declaration_terms',
           link: '/declaration_terms'
+        },
+        literature: {
+          topColor: '#BB5770',
+          sideColor: '#9B5364',
+          title: 'literature',
+          link: '/literature'
         }
       }
     }
