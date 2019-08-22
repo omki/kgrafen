@@ -14,7 +14,7 @@
       <h1>{{$t('pages.forum.conferences.title')}}</h1>
       <div class="conferences">
       <div class="conference" v-for="conference in conferences" :key="conference.id">
-          <a :href="conference.link"><img :src="conference.imageUrl" alt=""></a>
+          <nuxt-link v-bind:to="conference.link"><img :src="conference.imageUrl" alt=""></nuxt-link>
           <div class="bookTitle">"{{conference.name}}"</div>
         </div>
       </div>
