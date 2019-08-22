@@ -35,6 +35,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 14px;
 }
 
 *,
