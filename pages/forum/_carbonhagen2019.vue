@@ -2,7 +2,7 @@
   <section id="page">
     <div class="page-container">
       <h1>{{$t('page.header.title')}} ~ {{title}}</h1>
-      <img :src="imageUrl" alt />
+      <a href="http://www.carbonhagen.com/cbh" target="_blank"><img :src="imageUrl" alt /></a>
       <div class="page_title">9th symposium on two~dimensional materials</div>
       <div class="page_subtitle">Copenhagen, August 21~22, 2019</div>
       <div class="content">
