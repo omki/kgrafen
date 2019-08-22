@@ -32,7 +32,7 @@ export default {
           name: "Carbonhagen 2019",
           year: 2019,
           imageUrl: "http://www.carbonhagen.com/_/rsrc/1556543454758/config/header%20800.jpg.1556543454471.jpg",
-          link: "/forum/carbonhagen2019"
+          link: "/forum/carbonhagen2019" +'?lang='+ this.$store.state.locale
         }
       ]
     }
