@@ -15,7 +15,7 @@
       <div class="conferences">
       <div class="conference" v-for="conference in conferences" :key="conference.id">
           <nuxt-link v-bind:to="conference.link"><img :src="conference.imageUrl" alt=""></nuxt-link>
-          <div class="bookTitle">"{{conference.name}}"</div>
+          <div class="bookTitle">"{{$t('page.header.title')}} ~ {{conference.name}}"</div>
         </div>
       </div>
     </div>
@@ -56,9 +56,7 @@ export default {
 }
 
 .conferences {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 20px;
+  width: 70%;
 }
 
 .conference  {
