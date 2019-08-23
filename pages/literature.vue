@@ -4,7 +4,7 @@
       <h1>{{$t('page.header.title')}} ~ {{$t('navigation.literature')}}</h1>
 
       <div class="books"> 
-        <div class="book" v-for="book in books" :key="book.id">
+        <div class="book" v-for="book in getBooksByLanguage()" :key="book.id">
           <a :href="book.link" target="_blank"><img :src="book.imageUrl" alt=""></a>
           <div class="bookTitle">"{{book.title}}"</div>
           {{book.authors}}, {{book.year}}, {{book.publisher}}
@@ -18,7 +18,7 @@
 export default {
   data() {
     return {
-      books: [
+      books_pl: [
         {
           title: "Nanotechnologia w praktyce",
           link: "https://pzwl.pl/Nanotechnologia-w-praktyce,14576651,p.html",
@@ -43,7 +43,48 @@ export default {
           year: "2014",
           publisher: "Wydawnictwo Uniwersytetu Warszawskiego"
         },
+      ],
+      books_en: [
+        {
+          title: "Graphene Science Handbook: Mechanical and Chemical Properties",
+          link: "https://www.crcpress.com/Graphene-Science-Handbook-Mechanical-and-Chemical-Properties/Aliofkhazraei-Ali-Milne-Ozkan-Mitura-Gervasoni/p/book/9781466591233",
+          imageUrl: "https://images.tandf.co.uk/common/jackets/amazon/978146659/9781466591233.jpg",
+          authors: "Mahmood Aliofkhazraei et al",
+          year: "2016",
+          publisher: "CRC Press"
+        },
+        {
+          title: "The Handbook of Graphene Electrochemistry",
+          link: "https://graphenequantec.wordpress.com/graphite-quantum-technology-library-2/graphite-quantum-technology-library/",
+          imageUrl: "https://images.tandf.co.uk/common/jackets/amazon/978146659/9781466591271.jpg",
+          authors: "Dale A. C. Brownson, Dimitrios K. Kampouris and Craig E. Banks",
+          year: "2014",
+          publisher: "Springer"
+        },
+        {
+          title: "Graphene Science Handbook: Mechanical and Chemical Properties",
+          link: "https://www.crcpress.com/Graphene-Science-Handbook-Mechanical-and-Chemical-Properties/Aliofkhazraei-Ali-Milne-Ozkan-Mitura-Gervasoni/p/book/9781466591233",
+          imageUrl: "https://graphenequantec.files.wordpress.com/2016/11/gebc.png?w=199&h=300",
+          authors: "Mahmood Aliofkhazraei et al",
+          year: "2016",
+          publisher: "CRC Press"
+        },
+        {
+          title: "Handbook of Graphene Technology and Innovations",
+          link: "https://www.mightyape.co.nz/product/handbook-of-graphene-hardback/28505518",
+          imageUrl: "https://d3fa68hw0m2vcc.cloudfront.net/084/215097971.jpeg",
+          authors: "Sulaiman Wadi Harun",
+          year: "2019",
+          publisher: "John Wiley & Sons Inc"
+        },
       ]
+    }
+  },
+  methods: {
+    getBooksByLanguage() {
+      let lang = this.$store.state.locale;
+      if (lang == 'pl') return this.books_pl;
+      if (lang == 'en') return this.books_en;
     }
   }
 }
