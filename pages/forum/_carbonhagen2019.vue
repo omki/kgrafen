@@ -7,8 +7,14 @@
       <div class="page_subtitle">Copenhagen, August 21~22, 2019</div>
       <div class="content">
         <div class="pictures">
-          <img src="./images/carbonhagen2019_posters.jpg" alt />
-          Poster session
+          <div class="picture">
+            <img src="./images/carbonhagen2019_posters.jpg" alt />
+            {{$t('pages.forum.carbohagen2019.image1caption')}}
+          </div>
+          <div class="picture">
+            <img src="./images/L1012008.jpg" alt />
+            {{$t('pages.forum.carbohagen2019.image2caption')}}
+          </div>
         </div>
         <div class="description" v-html="$t('pages.forum.carbohagen2019.description')">
         </div>
@@ -64,5 +70,9 @@ img {
   text-align: center;
   width: 50%;
   margin: 0 100px;
+}
+
+.picture {
+  margin-bottom: 20px;
 }
 </style>
