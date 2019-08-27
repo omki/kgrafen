@@ -45,6 +45,10 @@
         "image1caption": "Poster session",
         "image2caption": "Committee member next to one of the posters."
       }
+    },
+    "literature": {
+      "books_header": "Books",
+      "articless_header": "Articles"
     }
   },
   "home": {

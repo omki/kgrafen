@@ -3,8 +3,17 @@
     <div class="page-container">
       <h1>{{$t('page.header.title')}} ~ {{$t('navigation.literature')}}</h1>
 
+      <div v-if="getBooksByLanguage().length != 0" class="sectionHeader">{{$t('pages.literature.books_header')}}</div>
       <div class="books"> 
         <div class="book" v-for="book in getBooksByLanguage()" :key="book.id">
+          <a :href="book.link" target="_blank"><img :src="book.imageUrl" alt=""></a>
+          <div class="bookTitle">"{{book.title}}"</div>
+          {{book.authors}}, {{book.year}}, {{book.publisher}}
+        </div>
+      </div>
+      <div v-if="getArticlesByLanguage().length != 0" class="sectionHeader">{{$t('pages.literature.articless_header')}}</div>
+      <div class="articles"> 
+        <div class="article" v-for="book in getArticlesByLanguage()" :key="book.id">
           <a :href="book.link" target="_blank"><img :src="book.imageUrl" alt=""></a>
           <div class="bookTitle">"{{book.title}}"</div>
           {{book.authors}}, {{book.year}}, {{book.publisher}}
@@ -77,6 +86,17 @@ export default {
           year: "2019",
           publisher: "John Wiley & Sons Inc"
         },
+      ],
+      articles_pl: [],
+      articles_en: [
+        {
+          title: "Graphene-oxide/TiO2 nanocomposite films with electron-donors for multicolor holography",
+          link: "https://www.osapublishing.org/oe/fulltext.cfm?uri=oe-27-2-1740&id=404139",
+          imageUrl: "https://graphenequantec.files.wordpress.com/2019/08/graphene_nanocomposite_holography.png",
+          authors: "Jiarui Wu, et al.",
+          year: "2016",
+          publisher: "Optics Express"
+        },
       ]
     }
   },
@@ -85,6 +105,11 @@ export default {
       let lang = this.$store.state.locale;
       if (lang == 'pl') return this.books_pl;
       if (lang == 'en') return this.books_en;
+    },
+    getArticlesByLanguage() {
+      let lang = this.$store.state.locale;
+      if (lang == 'pl') return this.articles_pl;
+      if (lang == 'en') return this.articles_en;
     }
   }
 }
@@ -95,7 +120,7 @@ export default {
   height: 2000px;
 }
 
-.books {
+.books, .articles {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 20px;
@@ -106,4 +131,11 @@ export default {
   font-weight: bold;
   margin-bottom: 5px;
 }
+
+.sectionHeader {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 40px 0 10px;
+}
+
 </style>

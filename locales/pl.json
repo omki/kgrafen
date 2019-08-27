@@ -45,6 +45,10 @@
         "image1caption": "Prezentacja posterów",
         "image2caption": "Członek komitetu przy jednym z plakatów"
       }
+    },
+    "literature": {
+      "books_header": "Książki",
+      "articless_header": "Artykuły"
     }
   },
   "navs": {
