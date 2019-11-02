@@ -33,8 +33,21 @@
       }
     },
     "contact": {
+      "join_club": "Dołącz do",
       "send_email": "Wyślij nam wiadomość na",
-      "join_video_conference_room": "Dołącz do pokoju video konferencji"
+      "join_video_conference_room": "Dołącz do pokoju video konferencji",
+      "contact_form": {
+        "header": "Proszę o przyjęcie mnie w poczet Członków Polskiego Komitetu SEP ds. Technologii Grafenowej",
+        "name_surname": "Imię i Nazwisko",
+        "email": "Email",
+        "phone": "Telefon",
+        "read": "Zapoznałe(a)m się z",
+        "terms": "Regulaminem",
+        "committee_name": "Polskiego Komitetu SEP ds. Technologii Grafenowej.",
+        "send": "Wyślij",
+        "thank_you_note": "Dziękuję za wypełnienie formularza",
+        "title": "P. O. Przewodniczącego Komitetu dr Tadeusz Habdank Wojewódzki"
+      }
     },
     "forum": {
       "conferences": {
@@ -61,7 +74,7 @@
   },
   "navigation": {
     "home": "Strona domowa",
-    "contact": "Skontaktuj sie z nami",
+    "contact": "Skontaktuj sie z Graphene Club",
     "social": "Media spolecznosciowe",
     "projects": "Projekty",
     "mission_vision": "Misja i Wizja",

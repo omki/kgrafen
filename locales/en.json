@@ -33,8 +33,21 @@
       }
     },
     "contact": {
+      "join_club": "Join",
       "send_email": "Send us email at",
-      "join_video_conference_room": "Join Video Conference Room @"
+      "join_video_conference_room": "Join Video Conference Room @",
+      "contact_form": {
+        "header": "Please, accept me as a member of the Polish SEP Committee for Graphene Technology",
+        "name_surname": "Name and Surname",
+        "email": "Email",
+        "phone": "Phone",
+        "read": "I have read",
+        "terms": "the terms",
+        "committee_name": "of Polish Science Committee in charge by APEE for Graphene Technology.",
+        "send": "Send",
+        "thank_you_note": "Thank you for completing the form!",
+        "title": "Acting Committee Chairman Tadeusz Habdank Wojewódzki PhD"
+      }
     },
     "forum": {
       "conferences": {
@@ -56,7 +69,7 @@
   },
   "navigation": {
     "home": "Home",
-    "contact": "Contact us",
+    "contact": "Contact Graphene Club",
     "social": "Social media",
     "projects": "Projects",
     "mission_vision": "Mission & Vision",

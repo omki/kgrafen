@@ -3,6 +3,10 @@
     <div class="page-container">
       <h1>{{$t('page.header.title')}} ~ {{$t('navigation.contact')}}</h1>
       <br>
+      <b>{{$t('pages.contact.join_club')}}
+      <a href="https://grapheneclub.netlify.com/" target="_blank">Graphene Club</a></b>
+      <br>
+      <br>
       {{$t('pages.contact.send_email')}}
       <a href="mailto:komitetgrafen@gmail.com">komitetgrafen@gmail.com</a>
       <br>
@@ -12,31 +16,34 @@
       <br>
       <br>
       <div class="accessForm">
-        <h2>Proszę o przyjęcie mnie w poczet Członków Polskiego Komitetu SEP ds. Technologii Grafenowej</h2>
+        <h2>{{$t('pages.contact.contact_form.header')}}</h2>
         <div class="name">
-          Imię i Nazwisko
+          {{$t('pages.contact.contact_form.name_surname')}}
           <input v-model="name" type="text">
         </div>
         <div class="email">
-          Email
+          {{$t('pages.contact.contact_form.email')}}
           <input v-model="email" type="text">
         </div>
         <div class="telephone">
-          Telefon
+          {{$t('pages.contact.contact_form.phone')}}
           <input v-model="phone" type="text">
         </div>
         <div class="terms">
           <input type="checkbox" v-model="termsRead">
-          Zapoznałe(a)m się z
-          <nuxt-link v-bind:to="'/declaration_terms'">Regulaminem</nuxt-link>Polskiego Komitetu SEP ds. Technologii Grafenowej.
+          {{$t('pages.contact.contact_form.read')}}
+          <nuxt-link v-bind:to="'/declaration_terms'">{{$t('pages.contact.contact_form.terms')}}</nuxt-link>
+          {{$t('pages.contact.contact_form.committee_name')}}
         </div>
         <div class="telephone">
-          <button @click="writeToFirestore" :disabled="!termsRead" type="button">Wyślij</button>
+          <button @click="writeToFirestore" :disabled="!termsRead" type="button">
+            {{$t('pages.contact.contact_form.send')}}
+          </button>
         </div>
       </div>
       <div class="thanksForForm" v-if="writeSuccessful">
-        <br>Dziękuję za wypełnienie formularza <br>
-        P. O. Przewodniczącego Komitetu dr Tadeusz Habdank Wojewódzki
+        <br>{{$t('pages.contact.contact_form.thank_you_note')}}<br>
+        {{$t('pages.contact.contact_form.title')}}
       </div>
     </div>
   </section>

@@ -1,5 +1,15 @@
 <template>
   <section class="navigation">
+
+    <div class="choose-language">
+      <p>{{$t('home.lang.title')}}</p>
+
+      <select name="lang" @change="changeLang()" v-model="key">
+        <option value="pl">Polski</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+    
     <coin
       v-for="(item, name, index) in navigation_items"
       :key="item.id"
@@ -19,15 +29,6 @@
         {{$t('page.header.title')}} ~ {{$t('navigation.fullerene')}}
       </div>
     </nuxt-link>
-
-    <div class="choose-language">
-      <p>{{$t('home.lang.title')}}</p>
-
-      <select name="lang" @change="changeLang()" v-model="key">
-        <option value="pl">Polski</option>
-        <option value="en">English</option>
-      </select>
-    </div>
 
     <div class="kgrafen-symbol">
       <img :src="require('../assets/images/kgrafen_symbol_' + $store.state.locale + '.png')">
