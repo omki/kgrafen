@@ -45,6 +45,9 @@
         <br>{{$t('pages.contact.contact_form.thank_you_note')}}<br>
         {{$t('pages.contact.contact_form.title')}}
       </div>
+      <div class="kgraphene_society">
+        <h2>KGrafen Society</h2>
+      </div>
     </div>
   </section>
 </template>
