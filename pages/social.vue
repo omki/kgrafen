@@ -8,6 +8,9 @@
           <img src="../assets/images/social/youtube.png" alt="">
         </div>
         <div class="aspect-ratio">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qzUjnlP17Dc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="aspect-ratio">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/niW6nhdBs1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="aspect-ratio">
