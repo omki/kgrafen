@@ -6,7 +6,7 @@
       <div v-if="getBooksByLanguage().length != 0" class="sectionHeader">{{$t('pages.literature.books_header')}}</div>
       <div class="books"> 
         <div class="book" v-for="book in getBooksByLanguage()" :key="book.id">
-          <a :href="book.link" target="_blank"><img :src="require(book.imageUrl)" alt=""></a>
+          <a :href="book.link" target="_blank"><img :src="book.imageUrl" alt=""></a>
           <div class="bookTitle">"{{book.title}}"</div>
           {{book.authors}}, {{book.year}}, {{book.publisher}}
         </div>
@@ -14,7 +14,7 @@
       <div v-if="getArticlesByLanguage().length != 0" class="sectionHeader">{{$t('pages.literature.articless_header')}}</div>
       <div class="articles"> 
         <div class="article" v-for="book in getArticlesByLanguage()" :key="book.id">
-          <a :href="book.link" target="_blank"><img :src="require(book.imageUrl)" alt=""></a>
+          <a :href="book.link" target="_blank"><img :src="book.imageUrl" alt=""></a>
           <div class="bookTitle">"{{book.title}}"</div>
           {{book.authors}}, {{book.year}}, {{book.publisher}}
         </div>
@@ -31,7 +31,7 @@ export default {
         {
           title: "Nanotechnologia w praktyce",
           link: "https://pzwl.pl/Nanotechnologia-w-praktyce,14576651,p.html",
-          imageUrl: "../assets/images/literature/nanotechnologia.jpg",
+          imageUrl: "https://graphenequantec.files.wordpress.com/2021/05/nanotechnologia.jpg",
           authors: "Kamila Żelechowska",
           year: "2016",
           publisher: "Wydawnictwo Naukowe PWN"
@@ -39,7 +39,7 @@ export default {
         {
           title: "Grafen ~ Otrzymywanie, charakterystyka, zastosowania",
           link: "https://pzwl.pl/Grafen,76584007,p.html",
-          imageUrl: "../assets/images/literature/grafen_ocz.jpg",
+          imageUrl: "https://graphenequantec.files.wordpress.com/2021/05/grafen_ocz.jpg",
           authors: "Agnieszka Dąbrowska, Andrzej Huczko, Magdalena Kurcz",
           year: "2016",
           publisher: "Wydawnictwa Uniwersytetu Warszawskiego"
@@ -47,15 +47,15 @@ export default {
         {
           title: "Nanorurki węglowe ~ Otrzymywanie, charakterystyka, zastosowania",
           link: "https://pzwl.pl/Nanorurki-weglowe,5072767,p.html",
-          imageUrl: "../assets/images/literature/nanorurki.jpg",
+          imageUrl: "https://graphenequantec.files.wordpress.com/2021/05/nanorurki.jpg",
           authors: "Andrzej Huczko, Magdalena Kurcz, Magdalena Popławska",
           year: "2014",
           publisher: "Wydawnictwo Uniwersytetu Warszawskiego"
         },
         {
           title: "Raport z Akceleracji Projektu ~ Czujniki grafenowe",
-          link: "../assets/pdfs/raport_czujniki_grafenowe.pdf",
-          imageUrl: "../assets/images/literature/raport.jpg",
+          link: "https://graphenequantec.files.wordpress.com/2021/05/raport_czujniki_grafenowe.pdf",
+          imageUrl: "https://graphenequantec.files.wordpress.com/2021/05/raport.jpg",
           authors: "Doktor Habdank, et al.",
           year: "2013"
         },
