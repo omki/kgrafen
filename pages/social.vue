@@ -41,7 +41,7 @@
         <div class="socialimage">
           <img src="../assets/images/social/wordpress.png" alt="">
         </div>
-        <a href="http://graphenequantec.wordpress.com" target="_blank">
+        <a href="https://graphenequantec.wordpress.com" target="_blank">
           <img src="../assets/images/graphene.png" alt="">
           Polish Science Committee in charge by Association of Polish Electrical Engineers for Graphene Technology.
         </a>

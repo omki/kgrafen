@@ -23,10 +23,10 @@
             <article class="float-full">
               <div class="pic">
                 <a
-                  href="http://www.sigma-not.pl/publikacja-32608-mikronanokompozyt-grafit-cynk-jako-materiał-do-konstrukcji-sensora-temperatury-węzła-tarcia-elektronika-konstrukcje-technologie-zastosowania-2008-1.html"
+                  href="https://www.sigma-not.pl/publikacja-32608-mikronanokompozyt-grafit-cynk-jako-materiał-do-konstrukcji-sensora-temperatury-węzła-tarcia-elektronika-konstrukcje-technologie-zastosowania-2008-1.html"
                   class="w_hover img-link img-wrap"
                 >
-                  <img src="http://images.sigma-not.pl/2008/13/1">
+                  <img src="https://images.sigma-not.pl/2008/13/1">
                   
                   <span class="link-icon"></span>
                 </a>
@@ -34,14 +34,14 @@
               <div class="float-text">
                 <h3>
                   <a
-                    href="http://www.sigma-not.pl/publikacja-32608-mikronanokompozyt-grafit-cynk-jako-materiał-do-konstrukcji-sensora-temperatury-węzła-tarcia-elektronika-konstrukcje-technologie-zastosowania-2008-1.html"
+                    href="https://www.sigma-not.pl/publikacja-32608-mikronanokompozyt-grafit-cynk-jako-materiał-do-konstrukcji-sensora-temperatury-węzła-tarcia-elektronika-konstrukcje-technologie-zastosowania-2008-1.html"
                   >
                     <b>Mikronanokompozyt grafit-cynk jako materiał do konstrukcji sensora temperatury węzła tarcia</b>
                   </a>
                 </h3>
                 <div class="post-info">
                   <a
-                    href="http://www.sigma-not.pl/zeszyt-1628-elektronika-konstrukcje-technologie-zastosowania-1.html"
+                    href="https://www.sigma-not.pl/zeszyt-1628-elektronika-konstrukcje-technologie-zastosowania-1.html"
                     class="post_date"
                   >
                     ELEKTRONIKA
@@ -53,7 +53,7 @@
                 <div class="post-info">
                   <a
                     class="post_author"
-                    href="http://www.sigma-not.pl/autor-32608-0-tadeusz-habdank-wojewodzki.html"
+                    href="https://www.sigma-not.pl/autor-32608-0-tadeusz-habdank-wojewodzki.html"
                     title="Wyszukaj dla autora: TADEUSZ HABDANK-WOJEWÓDZKI"
                   >
                     TADEUSZ
@@ -61,7 +61,7 @@
                   </a>&nbsp;
                   <a
                     class="post_author"
-                    href="http://www.sigma-not.pl/autor-32608-1-jozef-habdank.html"
+                    href="https://www.sigma-not.pl/autor-32608-1-jozef-habdank.html"
                     title="Wyszukaj dla autora: JÓZEF HABDANK"
                   >
                     JÓZEF
@@ -72,7 +72,7 @@
                 <div class="text">
                   <a
                     title="Pobierz za darmo"
-                    href="http://www.sigma-not.pl/download.do?mode=freePublication&amp;id=32608"
+                    href="https://www.sigma-not.pl/download.do?mode=freePublication&amp;id=32608"
                   >Czytaj za darmo! »</a>
                   <p>
                     Mikronanokompozyty są mieszaninami faz nano i faz mikro
@@ -89,24 +89,24 @@
             <article class="float-full">
               <div class="pic">
                 <a
-                  href="http://www.sigma-not.pl/publikacja-34185-modyfikacja-powierzchni-mikro--i-nanoproszków---napełniaczy-mikronanokompozytów-polimerowych-wiadomosci-elektrotechniczne-2008-4.html"
+                  href="https://www.sigma-not.pl/publikacja-34185-modyfikacja-powierzchni-mikro--i-nanoproszków---napełniaczy-mikronanokompozytów-polimerowych-wiadomosci-elektrotechniczne-2008-4.html"
                   class="w_hover img-link img-wrap"
                 >
-                  <img src="http://images.sigma-not.pl/2008/74/4">
+                  <img src="https://images.sigma-not.pl/2008/74/4">
                   <span class="link-icon"></span>
                 </a>
               </div>
               <div class="float-text">
               <h3>
                 <a
-                  href="http://www.sigma-not.pl/publikacja-34185-modyfikacja-powierzchni-mikro--i-nanoproszków---napełniaczy-mikronanokompozytów-polimerowych-wiadomosci-elektrotechniczne-2008-4.html"
+                  href="https://www.sigma-not.pl/publikacja-34185-modyfikacja-powierzchni-mikro--i-nanoproszków---napełniaczy-mikronanokompozytów-polimerowych-wiadomosci-elektrotechniczne-2008-4.html"
                 >
                   <b>Modyfikacja powierzchni mikro- i nanoproszków - napełniaczy mikronanokompozytów polimerowych</b>
                 </a>
               </h3>
               <div class="post-info">
                 <a
-                  href="http://www.sigma-not.pl/zeszyt-1708-wiadomosci-elektrotechniczne-4.html"
+                  href="https://www.sigma-not.pl/zeszyt-1708-wiadomosci-elektrotechniczne-4.html"
                   class="post_date"
                 >
                   WIADOMOŚCI ELEKTROTECHNICZNE
@@ -117,7 +117,7 @@
               <div class="post-info">
                 <a
                   class="post_author"
-                  href="http://www.sigma-not.pl/autor-34185-0-tadeusz-habdank-wojewodzki.html"
+                  href="https://www.sigma-not.pl/autor-34185-0-tadeusz-habdank-wojewodzki.html"
                   title="Wyszukaj dla autora: Tadeusz Habdank-Wojewódzki"
                 >
                   Tadeusz
@@ -125,7 +125,7 @@
                 </a>&nbsp;
                 <a
                   class="post_author"
-                  href="http://www.sigma-not.pl/autor-34185-1-lech-subocz.html"
+                  href="https://www.sigma-not.pl/autor-34185-1-lech-subocz.html"
                   title="Wyszukaj dla autora: Lech Subocz"
                 >
                   Lech
@@ -136,7 +136,7 @@
               <div class="text">
                 <a
                   title="Pobierz za darmo"
-                  href="http://www.sigma-not.pl/download.do?mode=freePublication&amp;id=34185"
+                  href="https://www.sigma-not.pl/download.do?mode=freePublication&amp;id=34185"
                 >Czytaj za darmo! »</a>
                 <p>
                   Nanokompozyty polimerowe znajdują się obecnie

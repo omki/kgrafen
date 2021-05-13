@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style>
-/* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */
+/* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use https://leaverou.github.io/prefixfree/) /!\ */
 #coin-wrap {
   margin-top: -28px;
 }

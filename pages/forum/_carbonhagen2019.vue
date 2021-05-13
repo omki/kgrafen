@@ -2,7 +2,7 @@
   <section id="page">
     <div class="page-container">
       <h1>{{$t('page.header.title')}} ~ {{title}}</h1>
-      <a href="http://www.carbonhagen.com/cbh" target="_blank"><img :src="imageUrl" alt /></a>
+      <a href="https://www.carbonhagen.com/cbh" target="_blank"><img :src="imageUrl" alt /></a>
       <div class="page_title">9th symposium on two~dimensional materials</div>
       <div class="page_subtitle">Copenhagen, August 21~22, 2019</div>
       <div class="content">
@@ -31,7 +31,7 @@ export default {
       title: 'Carbonhagen 2019',
       year: 2019,
       imageUrl:
-        'http://www.carbonhagen.com/_/rsrc/1556543454758/config/header%20800.jpg.1556543454471.jpg',
+        'https://www.carbonhagen.com/_/rsrc/1556543454758/config/header%20800.jpg.1556543454471.jpg',
       link: '/carbonhagen2019'
     }
   }

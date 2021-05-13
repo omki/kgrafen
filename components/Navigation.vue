@@ -49,7 +49,7 @@ export default {
   //       { src: 'https://preview.babylonjs.com/babylon.js' },
   //       { src: 'https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js' },
   //       { src: 'https://code.jquery.com/pep/0.4.3/pep.js' },
-  //       { src: 'http://grafen.surge.sh/sphere.js' }
+  //       { src: 'https://grafen.surge.sh/sphere.js' }
   //     ]
   //   }
   // },
