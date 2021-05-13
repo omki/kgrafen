@@ -31,7 +31,7 @@ export default {
         {
           title: "Nanotechnologia w praktyce",
           link: "https://pzwl.pl/Nanotechnologia-w-praktyce,14576651,p.html",
-          imageUrl: "https://emp-scs.img-osdw.pl/img-p/1/kipzwl/9720c7ef/std/10e-1a7/14803026o.jpg",
+          imageUrl: "../assets/images/literature/nanotechnologia.jpg",
           authors: "Kamila Żelechowska",
           year: "2016",
           publisher: "Wydawnictwo Naukowe PWN"
@@ -39,7 +39,7 @@ export default {
         {
           title: "Grafen ~ Otrzymywanie, charakterystyka, zastosowania",
           link: "https://pzwl.pl/Grafen,76584007,p.html",
-          imageUrl: "https://emp-scs.img-osdw.pl/img-p/1/kipzwl/9720c7ef/std/10e-1a7/76655383o.jpg",
+          imageUrl: "../assets/images/literature/grafen_ocz.jpg",
           authors: "Agnieszka Dąbrowska, Andrzej Huczko, Magdalena Kurcz",
           year: "2016",
           publisher: "Wydawnictwa Uniwersytetu Warszawskiego"
@@ -47,10 +47,17 @@ export default {
         {
           title: "Nanorurki węglowe ~ Otrzymywanie, charakterystyka, zastosowania",
           link: "https://pzwl.pl/Nanorurki-weglowe,5072767,p.html",
-          imageUrl: "https://emp-scs.img-osdw.pl/img-p/1/kipzwl/9720c7ef/std/10e-1a7/6656966o.jpg",
+          imageUrl: "../assets/images/literature/nanorurki.jpg",
           authors: "Andrzej Huczko, Magdalena Kurcz, Magdalena Popławska",
           year: "2014",
           publisher: "Wydawnictwo Uniwersytetu Warszawskiego"
+        },
+        {
+          title: "Raport z Akceleracji Projektu ~ Czujniki grafenowe",
+          link: "../assets/pdfs/raport_czujniki_grafenowe.pdf",
+          imageUrl: "../assets/images/literature/raport.jpg",
+          authors: "Doktor Habdank, et al.",
+          year: "2013"
         },
       ],
       books_en: [
