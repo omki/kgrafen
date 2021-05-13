@@ -6,7 +6,7 @@
       <div v-if="getBooksByLanguage().length != 0" class="sectionHeader">{{$t('pages.literature.books_header')}}</div>
       <div class="books"> 
         <div class="book" v-for="book in getBooksByLanguage()" :key="book.id">
-          <a :href="book.link" target="_blank"><img :src="require(book.imageUrl)" alt=""></a>
+          <a :href="book.link" target="_blank"><img :src="book.imageUrl" alt=""></a>
           <div class="bookTitle">"{{book.title}}"</div>
           {{book.authors}}, {{book.year}}, {{book.publisher}}
         </div>
