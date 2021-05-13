@@ -30,7 +30,7 @@ export default {
       books_pl: [
         {
           title: "Raport z Akceleracji Projektu ~ Czujniki grafenowe",
-          link: "https://graphenequantec.filesorder.wordpress.com/2021/05/raport_czujniki_grafenowe.pdf",
+          link: "https://graphenequantec.files.wordpress.com/2021/05/raport_czujniki_grafenowe.pdf",
           imageUrl: "https://graphenequantec.files.wordpress.com/2021/05/raport.gif",
           authors: "Doktor Habdank, et al.",
           year: "2013"
