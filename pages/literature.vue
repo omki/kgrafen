@@ -29,6 +29,21 @@ export default {
     return {
       books_pl: [
         {
+          title: "Raport z Akceleracji Projektu ~ Czujniki grafenowe",
+          link: "https://graphenequantec.filesorder.wordpress.com/2021/05/raport_czujniki_grafenowe.pdf",
+          imageUrl: "https://graphenequantec.files.wordpress.com/2021/05/raport.gif",
+          authors: "Doktor Habdank, et al.",
+          year: "2013"
+        },
+        {
+          title: "Nanorurki węglowe ~ Otrzymywanie, charakterystyka, zastosowania",
+          link: "https://pzwl.pl/Nanorurki-weglowe,5072767,p.html",
+          imageUrl: "https://graphenequantec.files.wordpress.com/2021/05/nanorurki.jpg",
+          authors: "Andrzej Huczko, Magdalena Kurcz, Magdalena Popławska",
+          year: "2014",
+          publisher: "Wydawnictwo Uniwersytetu Warszawskiego"
+        },
+        {
           title: "Nanotechnologia w praktyce",
           link: "https://pzwl.pl/Nanotechnologia-w-praktyce,14576651,p.html",
           imageUrl: "https://graphenequantec.files.wordpress.com/2021/05/nanotechnologia.jpg",
@@ -43,21 +58,6 @@ export default {
           authors: "Agnieszka Dąbrowska, Andrzej Huczko, Magdalena Kurcz",
           year: "2016",
           publisher: "Wydawnictwa Uniwersytetu Warszawskiego"
-        },
-        {
-          title: "Nanorurki węglowe ~ Otrzymywanie, charakterystyka, zastosowania",
-          link: "https://pzwl.pl/Nanorurki-weglowe,5072767,p.html",
-          imageUrl: "https://graphenequantec.files.wordpress.com/2021/05/nanorurki.jpg",
-          authors: "Andrzej Huczko, Magdalena Kurcz, Magdalena Popławska",
-          year: "2014",
-          publisher: "Wydawnictwo Uniwersytetu Warszawskiego"
-        },
-        {
-          title: "Raport z Akceleracji Projektu ~ Czujniki grafenowe",
-          link: "https://graphenequantec.files.wordpress.com/2021/05/raport_czujniki_grafenowe.pdf",
-          imageUrl: "https://graphenequantec.files.wordpress.com/2021/05/raport.jpg",
-          authors: "Doktor Habdank, et al.",
-          year: "2013"
         },
       ],
       books_en: [
