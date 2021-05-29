@@ -47,6 +47,11 @@
       </div>
       <div class="kgraphene_society">
         <h2>KGrafen Society</h2>
+        <h3>Przewodniczący doktor Habdank Tadeusz</h3>
+        <div class="legitymacja">
+          <img src="../assets/images/contact/legitymacja_habdank/legitymacja_habdank_front.png" alt="">
+          <img src="../assets/images/contact/legitymacja_habdank/legitymacja_habdank_back.png" alt="">
+        </div>
       </div>
     </div>
   </section>
@@ -101,4 +106,9 @@ export default {
 .accessForm > div {
   margin: 5px 0;
 }
+
+.legitymacja img {
+  width: 400px;
+}
+
 </style>
