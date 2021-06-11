@@ -1,16 +1,15 @@
 <template>
   <section id="page">
     <div class="page-container">
-      <h1>{{$t('page.header.title')}}</h1>
+      <h1>{{ $t('page.header.title') }}</h1>
 
       <div class="float-full">
         <div class="float-half-left">
           <img src="../../assets/images/activities_en.png">
-          {{$t('page.header.title')}} ~ {{$t('pages.home.pillars_caption')}}
+          {{ $t('page.header.title') }} ~ {{ $t('pages.home.pillars_caption') }}
         </div>
 
         <div class="float-half-right">
-
           Program assumptions
           Issues of the SEP Committee on graphene technology - KS Grafen fully complies with the implementation of the statutory activity of SEP based mainly on the six pillars of activity:
 
@@ -41,7 +40,6 @@
         </div>
       </div>
     </div>
-
   </section>
 </template>
 

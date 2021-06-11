@@ -1,6 +1,6 @@
 <template>
   <div class="VueToNuxtLogo">
-    <img src="../assets/images/psc_graphene.png" >
+    <img src="../assets/images/psc_graphene.png">
   </div>
 </template>
 

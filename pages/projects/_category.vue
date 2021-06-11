@@ -1,25 +1,39 @@
 <template>
   <div>
-    <h2>Dodaj video do kategorii {{category}}</h2>
+    <h2>Dodaj video do kategorii {{ category }}</h2>
     <div class="insert-video">
-      <input type="text" v-model="videoId" placeholder="wprowadź id video z YouTube" class="insert-video-input">
+      <input
+        v-model="videoId"
+        type="text"
+        placeholder="wprowadź id video z YouTube"
+        class="insert-video-input"
+      >
       <button @click="writeToFirestore">
         <span>Dodaj</span>
       </button>
     </div>
 
     <div class="thumbs">
-      <img v-for="video in videos" :key="video.text" @click="selectVideo(video.id)" :src="'https://img.youtube.com/vi/'+ video.data().text +'/mqdefault.jpg'"> 
+      <img
+        v-for="video in videos"
+        :key="video.text"
+        :src="'https://img.youtube.com/vi/'+ video.data().text +'/mqdefault.jpg'"
+        @click="selectVideo(video.id)"
+      > 
     </div>
     <div class="video">
-      <iframe v-if="selectedVideo" id="ytplayer" type="text/html" width="640" height="360"
+      <iframe
+        v-if="selectedVideo"
+        id="ytplayer"
+        type="text/html"
+        width="640"
+        height="360"
         :src="'https://www.youtube.com/embed/' + selectedVideo + '?autoplay=1&origin=https://example.com'"
-        frameborder="0"></iframe>
+        frameborder="0"
+      />
     </div>
 
     <!-- https://www.googleapis.com/youtube/v3/videos?part=id%2Csnippet&id=YQHsXMglC9A&key=AIzaSyAkfWLJzhLVGxE0onSNBWpg3gc-kX_Xvl8 -->
-
-
   </div>
 </template>
 <script lang="ts">

@@ -1,8 +1,8 @@
 <template>
   <section id="page">
     <div class="page-container">
-      <h1>{{$t('page.header.title')}} ~ {{$t('navigation.contact')}}</h1>
-      <br/>
+      <h1>{{ $t('page.header.title') }} ~ {{ $t('navigation.contact') }}</h1>
+      <br>
       Send us email at komitetgrafen@gmail.com
     </div>
   </section>

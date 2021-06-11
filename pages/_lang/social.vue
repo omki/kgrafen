@@ -1,7 +1,7 @@
 <template>
   <section id="page">
     <div class="page-container">
-      <h1>{{$t('page.header.title')}} ~ {{$t('navigation.social')}}</h1>
+      <h1>{{ $t('page.header.title') }} ~ {{ $t('navigation.social') }}</h1>
     </div>
   </section>
 </template>

@@ -1,41 +1,52 @@
 <template>
   <section class="navigation">
-
     <div class="choose-language">
-      <p>{{$t('home.lang.title')}}</p>
+      <p>{{ $t('home.lang.title') }}</p>
 
-      <select name="lang" @change="changeLang()" v-model="key">
-        <option value="pl">Polski</option>
-        <option value="en">English</option>
+      <select
+        v-model="key"
+        name="lang"
+        @change="changeLang()"
+      >
+        <option value="pl">
+          Polski
+        </option>
+        <option value="en">
+          English
+        </option>
       </select>
     </div>
     
     <coin
       v-for="(item, name, index) in navigation_items"
       :key="item.id"
-      :topColor="item.topColor"
-      :sideColor="item.sideColor"
+      :top-color="item.topColor"
+      :side-color="item.sideColor"
       :index="doMath(index)"
       :title="$t('navigation.'+item.title)"
       :link="item.link +'?lang='+$store.state.locale"
-    ></coin>
+    />
 
     <!-- <canvas id="renderCanvas" touch-action="none"></canvas> -->
-    <nuxt-link v-bind:to="'/fullerene'">
+    <nuxt-link :to="'/fullerene'">
       <div class="fullerene">
         <div class="aspect-ratio-fullerene">
-          <iframe src="https://grafen.surge.sh/" frameborder="0" width="100%"></iframe>
+          <iframe
+            src="https://grafen.surge.sh/"
+            frameborder="0"
+            width="100%"
+          />
         </div>
-        {{$t('page.header.title')}} ~ {{$t('navigation.fullerene')}}
+        {{ $t('page.header.title') }} ~ {{ $t('navigation.fullerene') }}
       </div>
     </nuxt-link>
 
     <div class="kgrafen-symbol">
       <img :src="require('../assets/images/kgrafen_symbol_' + $store.state.locale + '.png')">
-      <p>{{$t('page.header.title')}}</p>
+      <p>{{ $t('page.header.title') }}</p>
     </div>
 
-    <div class="maps"></div>
+    <div class="maps" />
   </section>
 </template>
 
@@ -43,6 +54,11 @@
 import Coin from './coin.vue'
 
 export default {
+  components: {
+    Coin
+    // vSelect
+  },
+  scrollToTop: false,
   // head() {
   //   return {
   //     script: [
@@ -112,11 +128,6 @@ export default {
     let recaptchaScript = document.createElement('script')
     recaptchaScript.setAttribute('src', '//rf.revolvermaps.com/0/0/6.js?i=54em053ze4w&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80')
     document.querySelector('.maps').appendChild(recaptchaScript)
-  },
-  scrollToTop: false,
-  components: {
-    Coin
-    // vSelect
   },
   methods: {
     changeLang() {

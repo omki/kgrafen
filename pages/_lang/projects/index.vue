@@ -1,17 +1,29 @@
 <template>
   <section id="page">
     <div class="page-container">
-      <h1>{{$t('page.header.title')}} ~ {{$t('navigation.projects')}}</h1>
+      <h1>{{ $t('page.header.title') }} ~ {{ $t('navigation.projects') }}</h1>
 
       <div class="float-full">
         <div class="float-half-left">
           <div class="category-links">
-            <nuxt-link to="/projects/Energie Odnawialne">Energie Odnawialne</nuxt-link> ~ 
-            <nuxt-link to="/projects/Elektronika">Elektronika</nuxt-link> ~ 
-            <nuxt-link to="/projects/Elektromobilność">Elektromobilność</nuxt-link> ~ 
-            <nuxt-link to="/projects/Materiały">Materiały</nuxt-link> ~ 
-            <nuxt-link to="/projects/Elektrotechnika">Elektrotechnika</nuxt-link> ~ 
-            <nuxt-link to="/projects/Kompozyty">Kompozyty</nuxt-link>
+            <nuxt-link to="/projects/Energie Odnawialne">
+              Energie Odnawialne
+            </nuxt-link> ~ 
+            <nuxt-link to="/projects/Elektronika">
+              Elektronika
+            </nuxt-link> ~ 
+            <nuxt-link to="/projects/Elektromobilność">
+              Elektromobilność
+            </nuxt-link> ~ 
+            <nuxt-link to="/projects/Materiały">
+              Materiały
+            </nuxt-link> ~ 
+            <nuxt-link to="/projects/Elektrotechnika">
+              Elektrotechnika
+            </nuxt-link> ~ 
+            <nuxt-link to="/projects/Kompozyty">
+              Kompozyty
+            </nuxt-link>
           </div>
 
           <img src="../../../assets/images/KSGrafenFields.png">
@@ -28,7 +40,7 @@
                 >
                   <img src="https://images.sigma-not.pl/2008/13/1">
                   
-                  <span class="link-icon"></span>
+                  <span class="link-icon" />
                 </a>
               </div>
               <div class="float-text">
@@ -93,64 +105,63 @@
                   class="w_hover img-link img-wrap"
                 >
                   <img src="https://images.sigma-not.pl/2008/74/4">
-                  <span class="link-icon"></span>
+                  <span class="link-icon" />
                 </a>
               </div>
               <div class="float-text">
-              <h3>
-                <a
-                  href="https://www.sigma-not.pl/publikacja-34185-modyfikacja-powierzchni-mikro--i-nanoproszków---napełniaczy-mikronanokompozytów-polimerowych-wiadomosci-elektrotechniczne-2008-4.html"
-                >
-                  <b>Modyfikacja powierzchni mikro- i nanoproszków - napełniaczy mikronanokompozytów polimerowych</b>
-                </a>
-              </h3>
-              <div class="post-info">
-                <a
-                  href="https://www.sigma-not.pl/zeszyt-1708-wiadomosci-elektrotechniczne-4.html"
-                  class="post_date"
-                >
-                  WIADOMOŚCI ELEKTROTECHNICZNE
-                  2008/4
-                </a>
-              </div>
+                <h3>
+                  <a
+                    href="https://www.sigma-not.pl/publikacja-34185-modyfikacja-powierzchni-mikro--i-nanoproszków---napełniaczy-mikronanokompozytów-polimerowych-wiadomosci-elektrotechniczne-2008-4.html"
+                  >
+                    <b>Modyfikacja powierzchni mikro- i nanoproszków - napełniaczy mikronanokompozytów polimerowych</b>
+                  </a>
+                </h3>
+                <div class="post-info">
+                  <a
+                    href="https://www.sigma-not.pl/zeszyt-1708-wiadomosci-elektrotechniczne-4.html"
+                    class="post_date"
+                  >
+                    WIADOMOŚCI ELEKTROTECHNICZNE
+                    2008/4
+                  </a>
+                </div>
 
-              <div class="post-info">
-                <a
-                  class="post_author"
-                  href="https://www.sigma-not.pl/autor-34185-0-tadeusz-habdank-wojewodzki.html"
-                  title="Wyszukaj dla autora: Tadeusz Habdank-Wojewódzki"
-                >
-                  Tadeusz
-                  Habdank-Wojewódzki
-                </a>&nbsp;
-                <a
-                  class="post_author"
-                  href="https://www.sigma-not.pl/autor-34185-1-lech-subocz.html"
-                  title="Wyszukaj dla autora: Lech Subocz"
-                >
-                  Lech
-                  Subocz
-                </a>&nbsp;
-              </div>
+                <div class="post-info">
+                  <a
+                    class="post_author"
+                    href="https://www.sigma-not.pl/autor-34185-0-tadeusz-habdank-wojewodzki.html"
+                    title="Wyszukaj dla autora: Tadeusz Habdank-Wojewódzki"
+                  >
+                    Tadeusz
+                    Habdank-Wojewódzki
+                  </a>&nbsp;
+                  <a
+                    class="post_author"
+                    href="https://www.sigma-not.pl/autor-34185-1-lech-subocz.html"
+                    title="Wyszukaj dla autora: Lech Subocz"
+                  >
+                    Lech
+                    Subocz
+                  </a>&nbsp;
+                </div>
 
-              <div class="text">
-                <a
-                  title="Pobierz za darmo"
-                  href="https://www.sigma-not.pl/download.do?mode=freePublication&amp;id=34185"
-                >Czytaj za darmo! »</a>
-                <p>
-                  Nanokompozyty polimerowe znajdują się obecnie
-                  w głównym nurcie badań wielu laboratoriów naukowych.
-                  W odróżnieniu od nanokompozytów mikronanokompozyty
-                  posiadają dwa typy napełniaczy proszkowych: jeden w skali
-                  nano oraz dodatkowy w skali mikro, stanowiący pomost
-                  do makroskali oraz poszerzający możliwości modyfikacji
-                  ich własności. W celu zmian ich własności wykonuje
-                  się modyfikacje powierzchn[...]
-                </p>
+                <div class="text">
+                  <a
+                    title="Pobierz za darmo"
+                    href="https://www.sigma-not.pl/download.do?mode=freePublication&amp;id=34185"
+                  >Czytaj za darmo! »</a>
+                  <p>
+                    Nanokompozyty polimerowe znajdują się obecnie
+                    w głównym nurcie badań wielu laboratoriów naukowych.
+                    W odróżnieniu od nanokompozytów mikronanokompozyty
+                    posiadają dwa typy napełniaczy proszkowych: jeden w skali
+                    nano oraz dodatkowy w skali mikro, stanowiący pomost
+                    do makroskali oraz poszerzający możliwości modyfikacji
+                    ich własności. W celu zmian ich własności wykonuje
+                    się modyfikacje powierzchn[...]
+                  </p>
+                </div>
               </div>
-              </div>
-
             </article>
           </section>
         </div>

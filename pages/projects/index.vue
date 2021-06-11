@@ -1,17 +1,29 @@
 <template>
   <section id="page">
     <div class="page-container">
-      <h1>{{$t('page.header.title')}} ~ {{$t('navigation.projects')}}</h1>
+      <h1>{{ $t('page.header.title') }} ~ {{ $t('navigation.projects') }}</h1>
 
       <div class="float-full">
         <div class="float-half-left">
           <div class="category-links">
-            <nuxt-link to="/projects/Energie Odnawialne">Energie Odnawialne</nuxt-link> ~
-            <nuxt-link to="/projects/Elektronika">Elektronika</nuxt-link> ~
-            <nuxt-link to="/projects/Elektromobilność">Elektromobilność</nuxt-link> ~
-            <nuxt-link to="/projects/Materiały">Materiały</nuxt-link> ~
-            <nuxt-link to="/projects/Elektrotechnika">Elektrotechnika</nuxt-link> ~
-            <nuxt-link to="/projects/Kompozyty">Kompozyty</nuxt-link>
+            <nuxt-link to="/projects/Energie Odnawialne">
+              Energie Odnawialne
+            </nuxt-link> ~
+            <nuxt-link to="/projects/Elektronika">
+              Elektronika
+            </nuxt-link> ~
+            <nuxt-link to="/projects/Elektromobilność">
+              Elektromobilność
+            </nuxt-link> ~
+            <nuxt-link to="/projects/Materiały">
+              Materiały
+            </nuxt-link> ~
+            <nuxt-link to="/projects/Elektrotechnika">
+              Elektrotechnika
+            </nuxt-link> ~
+            <nuxt-link to="/projects/Kompozyty">
+              Kompozyty
+            </nuxt-link>
           </div>
 
           <img src="../../assets/images/KSGrafenFields.png">
@@ -20,7 +32,11 @@
 
         <div class="float-half-right">
           <section id="reviews_body">
-            <article class="float-full" v-for="publication in publications" :key="publication.id">
+            <article
+              v-for="publication in publications"
+              :key="publication.id"
+              class="float-full"
+            >
               <div class="pic">
                 <a
                   :href="publication.link"
@@ -36,7 +52,7 @@
                     :href="publication.link"
                     target="_blank"
                   >
-                    <b>{{publication.title}}</b>
+                    <b>{{ publication.title }}</b>
                   </a>
                 </h3>
                 <div class="post-info">
@@ -44,7 +60,7 @@
                     :href="publication.issue.link"
                     target="_blank"
                   >
-                    {{publication.issue.name}}
+                    {{ publication.issue.name }}
                   </a>
                 </div>
 
@@ -57,18 +73,17 @@
                     target="_blank"
                     :title="author.name"
                   >
-                    {{author.name}}
+                    {{ author.name }}
                   </a>&nbsp;
                 </div>
 
                 <div class="text">
                   <p>
-                    {{publication.abstract}}
+                    {{ publication.abstract }}
                   </p>
                 </div>
               </div>
             </article>
-
           </section>
         </div>
       </div>

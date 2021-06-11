@@ -1,23 +1,41 @@
 <template>
   <section id="page">
     <div class="page-container">
-      <h1>{{$t('page.header.title')}} ~ {{title}}</h1>
-      <a href="https://www.carbonhagen.com/cbh" target="_blank"><img :src="imageUrl" alt /></a>
-      <div class="page_title">9th symposium on two~dimensional materials</div>
-      <div class="page_subtitle">Copenhagen, August 21~22, 2019</div>
+      <h1>{{ $t('page.header.title') }} ~ {{ title }}</h1>
+      <a
+        href="https://www.carbonhagen.com/cbh"
+        target="_blank"
+      ><img
+        :src="imageUrl"
+        alt
+      ></a>
+      <div class="page_title">
+        9th symposium on two~dimensional materials
+      </div>
+      <div class="page_subtitle">
+        Copenhagen, August 21~22, 2019
+      </div>
       <div class="content">
         <div class="pictures">
           <div class="picture">
-            <img src="./images/carbonhagen2019_posters.jpg" alt />
-            {{$t('pages.forum.carbohagen2019.image1caption')}}
+            <img
+              src="./images/carbonhagen2019_posters.jpg"
+              alt
+            >
+            {{ $t('pages.forum.carbohagen2019.image1caption') }}
           </div>
           <div class="picture">
-            <img src="./images/L1012008.jpg" alt />
-            {{$t('pages.forum.carbohagen2019.image2caption')}}
+            <img
+              src="./images/L1012008.jpg"
+              alt
+            >
+            {{ $t('pages.forum.carbohagen2019.image2caption') }}
           </div>
         </div>
-        <div class="description" v-html="$t('pages.forum.carbohagen2019.description')">
-        </div>
+        <div
+          class="description"
+          v-html="$t('pages.forum.carbohagen2019.description')"
+        />
       </div>
     </div>
   </section>

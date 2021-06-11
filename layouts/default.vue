@@ -1,11 +1,11 @@
 <template>
   <div>
-    <topview/>
+    <topview />
     <div class="left-side-navigation">
-      <navigation/>
+      <navigation />
     </div>
     <div class="right-side-content">
-      <nuxt/>
+      <nuxt />
     </div>
   </div>
 </template>

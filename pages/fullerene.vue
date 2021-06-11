@@ -2,9 +2,13 @@
   <section id="page">
     <div class="fullerene">
       <div class="aspect-ratio-fullerene">
-        <iframe src="https://grafen.surge.sh/" frameborder="0" width="100%"></iframe>
+        <iframe
+          src="https://grafen.surge.sh/"
+          frameborder="0"
+          width="100%"
+        />
       </div>
-      {{$t('page.header.title')}} ~ {{$t('navigation.fullerene')}}
+      {{ $t('page.header.title') }} ~ {{ $t('navigation.fullerene') }}
     </div>
   </section>
 </template>

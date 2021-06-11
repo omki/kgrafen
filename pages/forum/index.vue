@@ -1,21 +1,38 @@
 <template>
   <section id="page">
     <div class="page-container">
-      <h1>{{$t('page.header.title')}} ~ {{$t('navigation.forum')}}</h1>
+      <h1>{{ $t('page.header.title') }} ~ {{ $t('navigation.forum') }}</h1>
       
       <div class="join_conference">
-        <h3>{{$t('pages.contact.join_video_conference_room')}}</h3><br/>
-        <a href="https://appear.in/grafen" target="_blank">
-          <img src="~assets/images/videoconferenceroom.png" alt="">
+        <h3>{{ $t('pages.contact.join_video_conference_room') }}</h3><br>
+        <a
+          href="https://appear.in/grafen"
+          target="_blank"
+        >
+          <img
+            src="~assets/images/videoconferenceroom.png"
+            alt=""
+          >
         </a>
       </div>
       
-      <br/><br/>
-      <h1>{{$t('pages.forum.conferences.title')}}</h1>
+      <br><br>
+      <h1>{{ $t('pages.forum.conferences.title') }}</h1>
       <div class="conferences">
-      <div class="conference" v-for="conference in conferences" :key="conference.id">
-          <nuxt-link v-bind:to="conference.link"><img :src="conference.imageUrl" alt=""></nuxt-link>
-          <div class="bookTitle">"{{$t('page.header.title')}} ~ {{conference.name}}"</div>
+        <div
+          v-for="conference in conferences"
+          :key="conference.id"
+          class="conference"
+        >
+          <nuxt-link :to="conference.link">
+            <img
+              :src="conference.imageUrl"
+              alt=""
+            >
+          </nuxt-link>
+          <div class="bookTitle">
+            "{{ $t('page.header.title') }} ~ {{ conference.name }}"
+          </div>
         </div>
       </div>
     </div>

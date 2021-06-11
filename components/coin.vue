@@ -1,21 +1,32 @@
 <template>
-  <div id="coin-wrap" v-bind:style="{'z-index': -index + 10}">
-    <nuxt-link v-bind:to="link">
+  <div
+    id="coin-wrap"
+    :style="{'z-index': -index + 10}"
+  >
+    <nuxt-link :to="link">
       <div class="coin-container">
-        <div class="coin-title" v-bind:style="{'color' : topColor}">{{title}}</div>
+        <div
+          class="coin-title"
+          :style="{'color' : topColor}"
+        >
+          {{ title }}
+        </div>
         <div id="tridiv">
           <div
             class="scene"
             style="-webkit-transform:rotateX(348deg) rotateY(1234deg); -moz-transform:rotateX(348deg) rotateY(1234deg); -ms-transform:rotateX(348deg) rotateY(1234deg); transform:rotateX(348deg) rotateY(1234deg); "
           >
             <div class="shape cylinder-1 cyl-1">
-              <div class="face bm"/>
-              <div class="face tp" v-bind:style="{'background-color' : topColor}"/>
+              <div class="face bm" />
+              <div
+                class="face tp"
+                :style="{'background-color' : topColor}"
+              />
               <div
                 v-for="face in 16"
                 :key="face"
-                v-bind:class="'face side s' + face"
-                v-bind:style="{'background-color' : sideColor}"
+                :class="'face side s' + face"
+                :style="{'background-color' : sideColor}"
               />
             </div>
           </div>

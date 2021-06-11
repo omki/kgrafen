@@ -1,20 +1,24 @@
 <template>
   <section class="topview">
     <div class="aspect-ratio-header">
-      <iframe src="https://www.youtube.com/embed/jrOESc_vBh4?autoplay=1&rel=0&mute=1" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+      <iframe
+        src="https://www.youtube.com/embed/jrOESc_vBh4?autoplay=1&rel=0&mute=1"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      />
       <div class="header">
-        <logo/>
+        <logo />
         <h1 class="title">
           KGrafen
         </h1>
         <h2 class="subtitle">
-          {{$t('page.header.title')}}
+          {{ $t('page.header.title') }}
         </h2>
         <div class="links">
           <a
             href="#page"
-            class="button--yellow">{{$t('page.header.button_text')}}</a>
+            class="button--yellow"
+          >{{ $t('page.header.button_text') }}</a>
         </div>
       </div>
     </div>

@@ -1,22 +1,56 @@
 <template>
   <section id="page">
     <div class="page-container">
-      <h1>{{$t('page.header.title')}} ~ {{$t('navigation.literature')}}</h1>
+      <h1>{{ $t('page.header.title') }} ~ {{ $t('navigation.literature') }}</h1>
 
-      <div v-if="getBooksByLanguage().length != 0" class="sectionHeader">{{$t('pages.literature.books_header')}}</div>
+      <div
+        v-if="getBooksByLanguage().length != 0"
+        class="sectionHeader"
+      >
+        {{ $t('pages.literature.books_header') }}
+      </div>
       <div class="books"> 
-        <div class="book" v-for="book in getBooksByLanguage()" :key="book.id">
-          <a :href="book.link" target="_blank"><img :src="book.imageUrl" alt=""></a>
-          <div class="bookTitle">"{{book.title}}"</div>
-          {{book.authors}}, {{book.year}}, {{book.publisher}}
+        <div
+          v-for="book in getBooksByLanguage()"
+          :key="book.id"
+          class="book"
+        >
+          <a
+            :href="book.link"
+            target="_blank"
+          ><img
+            :src="book.imageUrl"
+            alt=""
+          ></a>
+          <div class="bookTitle">
+            "{{ book.title }}"
+          </div>
+          {{ book.authors }}, {{ book.year }}, {{ book.publisher }}
         </div>
       </div>
-      <div v-if="getArticlesByLanguage().length != 0" class="sectionHeader">{{$t('pages.literature.articless_header')}}</div>
+      <div
+        v-if="getArticlesByLanguage().length != 0"
+        class="sectionHeader"
+      >
+        {{ $t('pages.literature.articless_header') }}
+      </div>
       <div class="articles"> 
-        <div class="article" v-for="book in getArticlesByLanguage()" :key="book.id">
-          <a :href="book.link" target="_blank"><img :src="book.imageUrl" alt=""></a>
-          <div class="bookTitle">"{{book.title}}"</div>
-          {{book.authors}}, {{book.year}}, {{book.publisher}}
+        <div
+          v-for="book in getArticlesByLanguage()"
+          :key="book.id"
+          class="article"
+        >
+          <a
+            :href="book.link"
+            target="_blank"
+          ><img
+            :src="book.imageUrl"
+            alt=""
+          ></a>
+          <div class="bookTitle">
+            "{{ book.title }}"
+          </div>
+          {{ book.authors }}, {{ book.year }}, {{ book.publisher }}
         </div>
       </div>
     </div>
