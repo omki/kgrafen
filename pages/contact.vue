@@ -1,13 +1,16 @@
 <template>
   <section id="page">
     <div class="page-container">
-      <h1>{{$t('page.header.title')}} ~ {{$t('navigation.contact')}}</h1>
+      <h1>{{ $t('page.header.title') }} ~ {{ $t('navigation.contact') }}</h1>
       <br>
-      <b>{{$t('pages.contact.join_club')}}
-      <a href="https://grapheneclub.netlify.com/" target="_blank">Graphene Club</a></b>
+      <b>{{ $t('pages.contact.join_club') }}
+        <a
+          href="https://grapheneclub.netlify.com/"
+          target="_blank"
+        >Graphene Club</a></b>
       <br>
       <br>
-      {{$t('pages.contact.send_email')}}
+      {{ $t('pages.contact.send_email') }}
       <a href="mailto:komitetgrafen@gmail.com">komitetgrafen@gmail.com</a>
       <br>
       <!-- <br>
@@ -16,41 +19,92 @@
       <br>
       <br>
       <div class="accessForm">
-        <h2>{{$t('pages.contact.contact_form.header')}}</h2>
+        <h2>{{ $t('pages.contact.contact_form.header') }}</h2>
         <div class="name">
-          {{$t('pages.contact.contact_form.name_surname')}}
-          <input v-model="name" type="text">
+          {{ $t('pages.contact.contact_form.name_surname') }}
+          <input
+            v-model="name"
+            type="text"
+          >
         </div>
         <div class="email">
-          {{$t('pages.contact.contact_form.email')}}
-          <input v-model="email" type="text">
+          {{ $t('pages.contact.contact_form.email') }}
+          <input
+            v-model="email"
+            type="text"
+          >
         </div>
         <div class="telephone">
-          {{$t('pages.contact.contact_form.phone')}}
-          <input v-model="phone" type="text">
+          {{ $t('pages.contact.contact_form.phone') }}
+          <input
+            v-model="phone"
+            type="text"
+          >
         </div>
         <div class="terms">
-          <input type="checkbox" v-model="termsRead">
-          {{$t('pages.contact.contact_form.read')}}
-          <nuxt-link v-bind:to="'/declaration_terms'">{{$t('pages.contact.contact_form.terms')}}</nuxt-link>
-          {{$t('pages.contact.contact_form.committee_name')}}
+          <input
+            v-model="termsRead"
+            type="checkbox"
+          >
+          {{ $t('pages.contact.contact_form.read') }}
+          <nuxt-link :to="'/declaration_terms'">
+            {{ $t('pages.contact.contact_form.terms') }}
+          </nuxt-link>
+          {{ $t('pages.contact.contact_form.committee_name') }}
         </div>
         <div class="telephone">
-          <button @click="writeToFirestore" :disabled="!termsRead" type="button">
-            {{$t('pages.contact.contact_form.send')}}
+          <button
+            :disabled="!termsRead"
+            type="button"
+            @click="writeToFirestore"
+          >
+            {{ $t('pages.contact.contact_form.send') }}
           </button>
         </div>
       </div>
-      <div class="thanksForForm" v-if="writeSuccessful">
-        <br>{{$t('pages.contact.contact_form.thank_you_note')}}<br>
-        {{$t('pages.contact.contact_form.title')}}
+      <div
+        v-if="writeSuccessful"
+        class="thanksForForm"
+      >
+        <br>{{ $t('pages.contact.contact_form.thank_you_note') }}<br>
+        {{ $t('pages.contact.contact_form.title') }}
       </div>
       <div class="kgraphene_society">
         <h2>KGrafen Society</h2>
         <h3>Przewodniczący doktor Habdank Tadeusz</h3>
         <div class="legitymacja">
-          <img src="../assets/images/contact/legitymacja_habdank/legitymacja_habdank_front.png" alt="">
-          <img src="../assets/images/contact/legitymacja_habdank/legitymacja_habdank_back.png" alt="">
+          <div>
+            <img
+              src="../assets/images/contact/legitymacja_habdank/habdank_photo.png"
+              alt=""
+            >
+            <div>Przewodniczący Polskiego Komitetu SEP ds. Technologii Grafenowej</div>
+            <div>Doktor Habdank Tadeusz</div>
+          </div>
+          <div>
+            <img
+              src="../assets/images/contact/legitymacja_habdank/legitymacja_habdank_front.png"
+              alt=""
+            >
+            <div>SEP EXPERT</div>
+            <div>Stowarzyszenie Elektryków Polski</div>
+            <div>Rok założenia 1919</div>
+            <div>EKSPERT W DZIEDZINIE: [23] Inżynieria materiałowa</div>
+            <div>nr legitymacji: 17</div>
+            <div>Doktor Habdank Tadeusz</div>
+          </div>
+          <div>
+            <img
+              src="../assets/images/contact/legitymacja_habdank/legitymacja_habdank_back.png"
+              alt=""
+            >
+            <div>SEP ~ Stowarzyszenie Elektryków Polski</div>
+            <div>Association od Polish Electrical Engineers</div>
+            <div>LEGITYMACJA EXPERTA SEP</div>
+            <div>ZARZĄD GŁÓWNY</div>
+            <div>ul. Świętokrzyska 14</div>
+            <div>00-050 Warszawa</div>
+          </div>
         </div>
       </div>
     </div>
@@ -107,8 +161,16 @@ export default {
   margin: 5px 0;
 }
 
+.legitymacja {
+  display: flex;
+}
+
+.legitymacja > div {
+  margin-left: 10px;
+}
+
 .legitymacja img {
-  width: 400px;
+  width: 100%;
 }
 
 </style>
