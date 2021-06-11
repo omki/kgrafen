@@ -17,7 +17,12 @@
       </div>
       
       <br><br>
-      <h1>{{ $t('pages.forum.conferences.title') }}</h1>
+      <a
+        href="http://www.carbonhagen.com/cbh"
+        target="_blank"
+      >
+        <h1>{{ $t('pages.forum.conferences.title') }}</h1>
+      </a>
       <div class="conferences">
         <div
           v-for="conference in conferences"
@@ -31,7 +36,9 @@
             >
           </nuxt-link>
           <div class="bookTitle">
-            "{{ $t('page.header.title') }} ~ {{ conference.name }}"
+            <nuxt-link to="/forum/Carbonhagen2019">
+              "{{ $t('page.header.title') }} ~ {{ conference.name }}"
+            </nuxt-link>
           </div>
         </div>
       </div>

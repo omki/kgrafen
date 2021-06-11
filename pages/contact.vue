@@ -78,7 +78,7 @@
               src="../assets/images/contact/legitymacja_habdank/habdank_photo.png"
               alt=""
             >
-            <div>Przewodniczący Polskiego Komitetu SEP ds. Technologii Grafenowej</div>
+            <div>P.o. przewodniczącego Polskiego Komitetu SEP ds. Technologii Grafenowej</div>
             <div>Doktor Habdank Tadeusz</div>
           </div>
           <div>
