@@ -61,7 +61,37 @@
     },
     "literature": {
       "books_header": "Książki",
-      "articless_header": "Artykuły"
+      "articless_header": "Artykuły",
+      "books": [
+        {
+          "title": "Od technologii elastycznej elektroniczniki w erze Internetu Rzeczy i sztucznej inteligencji po przyszłe sieci czujników implantowanych do ciała",
+          "authors": "Sanghoon Lee, Qiongfeng Shi, and  Chengkuo Lee",
+          "jounal_year": "APL Materials 7, 031302 (2019)",
+          "link_pdf": "https://aip.scitation.org/doi/pdf/10.1063/1.5063498",
+          "link_html": "https://aip.scitation.org/doi/full/10.1063/1.5063498",
+          "chapters": [
+            {
+              "title": "Abstrakt",
+              "paragraphs": [
+                [
+                  "Elastyczna technologia elektroniczna radykalnie zmienia możliwości czujników, co pozwala nam wykrywać ludzkie sygnały biologiczne nie tylko na skórze, ale także wewnątrz ludzkiego ciała. Czujniki do noszenia, które przyklejają się do powierzchni skóry, mogą wykrywać różne ruchy biomechaniczne, sygnały biologiczne i produkty uboczne takie jak przydatne elementy pochodzące z potu i temperatury ciała. Z drugiej strony wszczepialne czujniki bezpośrednio lub pośrednio stykają się z biologicznymi składnikami wewnątrz ciała, takimi jak tkanka, narządy lub mięśnie, w celu wspomagania lub leczenia funkcji lub problemów organizmu. tych zaawansowanych czujników, możemy żyć razem z ogromną liczbą czujników w przyszłości.W kierunku sieci czujników ciała, które mogą być w pełni wszczepione w przyszłości, zrównoważonych źródeł energii, które wspierają działanie czujników, a także rozwój materiałów, które umożliwiają długie -terminowe stosowanie wewnątrz ciała pozostaje wyzwaniem.W tym przeglądzie najpierw podsumowujemy różne najnowocześniejsze czujniki pod kątem elastyczne i poręczne platformy. Dodatkowo dokonujemy przeglądu najnowszych trendów badawczych w zakresie przetwarzania energii mechanicznej i cieplnej na energię elektryczną potrzebną do działania czujników. Ponadto obejmujemy najnowsze badania w aspekcie materiałów na czujniki wszczepialne. . Na koniec omówimy przyszły kierunek czujników, który może umożliwić wszczepianie sieci czujników ciała w ciele."
+                ]
+              ]
+            },
+            {
+              "title": "Wstęp",
+              "paragraphs": [
+                [
+                  ""
+                ]
+              ]
+            }
+          ],
+          "references": [
+            {}
+          ]
+        }
+      ]
     }
   },
   "navs": {

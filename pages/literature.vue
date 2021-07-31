@@ -63,6 +63,13 @@ export default {
     return {
       books_pl: [
         {
+          title: "From flexible electronics technology in the era of IoT and artificial intelligence toward future implanted body sensor networks",
+          link: "/sensors",
+          imageUrl: "https://graphenequantec.files.wordpress.com/2021/07/flexible.gif",
+          authors: "Ajay Kumar Shrestha, Julita Vassileva, and Ralph Deters",
+          year: "2020"
+        },
+        {
           title: "Raport z Akceleracji Projektu ~ Czujniki grafenowe",
           link: "https://graphenequantec.files.wordpress.com/2021/05/raport_czujniki_grafenowe.pdf",
           imageUrl: "https://graphenequantec.files.wordpress.com/2021/05/raport.gif",
@@ -95,6 +102,13 @@ export default {
         },
       ],
       books_en: [
+        {
+          title: "From flexible electronics technology in the era of IoT and artificial intelligence toward future implanted body sensor networks",
+          link: "/sensors",
+          imageUrl: "https://graphenequantec.files.wordpress.com/2021/07/flexible.gif",
+          authors: "Ajay Kumar Shrestha, Julita Vassileva, and Ralph Deters",
+          year: "2020"
+        },
         {
           title: "Graphene Science Handbook: Mechanical and Chemical Properties",
           link: "https://www.crcpress.com/Graphene-Science-Handbook-Mechanical-and-Chemical-Properties/Aliofkhazraei-Ali-Milne-Ozkan-Mitura-Gervasoni/p/book/9781466591233",
