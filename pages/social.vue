@@ -3,87 +3,36 @@
     <div class="page-container">
       <h1>{{ $t('page.header.title') }} ~ {{ $t('navigation.social') }}</h1>
 
-      <div
-        class="column-3"
-        fxFlex="30"
-      >
+      <div class="column-3" fxFlex="30">
         <div class="socialimage">
-          <img
-            src="../assets/images/social/wordpress.png"
-            alt=""
-          >
+          <img src="../assets/images/social/wordpress.png" alt="" />
         </div>
-        <a
-          href="https://graphenequantec.wordpress.com"
-          target="_blank"
-        >
-          <img
-            src="../assets/images/graphene.png"
-            alt=""
-          >
-          Polish Science Committee in charge by Association of Polish Electrical Engineers for Graphene Technology.
+        <a href="https://graphenequantec.wordpress.com" target="_blank">
+          <img src="../assets/images/graphene.png" alt="" />
+          Polish Science Committee in charge by Association of Polish Electrical
+          Engineers for Graphene Technology.
         </a>
       </div>
 
-      <div
-        class="youtube column-3"
-        fxFlex="30"
-      >
+      <div class="youtube column-3" fxFlex="30">
         <div class="socialimage">
-          <img
-            src="../assets/images/social/youtube.png"
-            alt=""
-          >
+          <img src="../assets/images/social/youtube.png" alt="" />
         </div>
-        <div class="aspect-ratio">
+        <div class="aspect-ratio" v-for="video in getVideourl()" :key="video">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/qzUjnlP17Dc"
+            :src="video"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
-        </div>
-        <div class="aspect-ratio">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/niW6nhdBs1Q"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
-        </div>
-        <div class="aspect-ratio">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/XgSa23Ise40"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
-        </div>
-        <div class="aspect-ratio">
-          <iframe
-            src="https://www.youtube.com/embed/4OeR7S5TcUw"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
             allowfullscreen
           />
         </div>
       </div>
 
-      <div
-        class="column-3"
-        fxFlex="30"
-      >
+      <div class="column-3" fxFlex="30">
         <div class="socialimage">
-          <img
-            src="../assets/images/social/facebook.png"
-            alt=""
-          >
+          <img src="../assets/images/social/facebook.png" alt="" />
         </div>
         <no-ssr>
           <div
@@ -99,7 +48,9 @@
               cite="https://www.facebook.com/KGrafen/"
               class="fb-xfbml-parse-ignore"
             >
-              <a href="https://www.facebook.com/KGrafen/">Polski Komitet Naukowy SEP ds Technologii grafenowej</a>
+              <a href="https://www.facebook.com/KGrafen/"
+                >Polski Komitet Naukowy SEP ds Technologii grafenowej</a
+              >
             </blockquote>
           </div>
         </no-ssr>
@@ -117,7 +68,9 @@
               cite="https://www.facebook.com/graphenenews/"
               class="fb-xfbml-parse-ignore"
             >
-              <a href="https://www.facebook.com/graphenenews/">Graphene Quantum Technology</a>
+              <a href="https://www.facebook.com/graphenenews/"
+                >Graphene Quantum Technology</a
+              >
             </blockquote>
           </div>
         </no-ssr>
@@ -135,7 +88,10 @@
               cite="https://www.facebook.com/Graphene-Electrodes-Implanted-1149904715019877/"
               class="fb-xfbml-parse-ignore"
             >
-              <a href="https://www.facebook.com/Graphene-Electrodes-Implanted-1149904715019877/">Graphene Electrodes Implanted</a>
+              <a
+                href="https://www.facebook.com/Graphene-Electrodes-Implanted-1149904715019877/"
+                >Graphene Electrodes Implanted</a
+              >
             </blockquote>
           </div>
         </no-ssr>
@@ -148,50 +104,75 @@
 // import { FB } from '../plugins/fb-sdk.js'
 
 export default {
-    //   data: function () {
-    //     return {isFBReady: false}
-    // },
-    // mounted: function () {
-    //     this.isFBReady = Vue.FB != undefined
-    //     window.addEventListener('fb-sdk-ready', this.onFBReady)
-    // },
-    // beforeDestroy: function () {
-    //     window.removeEventListener('fb-sdk-ready', this.onFBReady)
-    // },
-    // methods: {
-    //     onFBReady: function () {
-    //       this.isFBReady = true
-    //     }
-    // }
+  data() {
+    return {
+      youtuve_videos: [
+        'OQBXyepm8Zc',
+        'XjXtuaIdBA8',
+        'Ouxj2V6JNEA',
+        'xQ0n8PZI034',
+        'gqP8OlR4uAo',
+        'WvAql9LENfY',
+        'qQiz8PIUsPU',
+        'YxZ0UAJrgQw',
+        'qzUjnlP17Dc',
+        'niW6nhdBs1Q',
+        'XgSa23Ise40',
+        '4OeR7S5TcUw',
+      ],
+    }
+  },
+  methods: {
+    getVideourl() {
+      return this.youtuve_videos.map(v => `https://www.youtube.com/embed/${v}`)
+    },
+  },
+  //   data: function () {
+  //     return {isFBReady: false}
+  // },
+  // mounted: function () {
+  //     this.isFBReady = Vue.FB != undefined
+  //     window.addEventListener('fb-sdk-ready', this.onFBReady)
+  // },
+  // beforeDestroy: function () {
+  //     window.removeEventListener('fb-sdk-ready', this.onFBReady)
+  // },
+  // methods: {
+  //     onFBReady: function () {
+  //       this.isFBReady = true
+  //     }
+  // }
 
-  created: function() {
+  created: function () {
     if (process.client) {
-    console.log('created main');
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '208927772784560',
-        xfbml      : true,
-        version    : 'v2.7'
-      });
+      console.log('created main')
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: '208927772784560',
+          xfbml: true,
+          version: 'v2.7',
+        })
 
-      //This function should be here, inside window.fbAsyncInit
-    //   FB.getLoginStatus(function(response) {
-    //     console.log(response);
-    //  });
+        //This function should be here, inside window.fbAsyncInit
+        //   FB.getLoginStatus(function(response) {
+        //     console.log(response);
+        //  });
+      }
 
-   };
-
-    (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  }
-  }
+      ;(function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0]
+        if (d.getElementById(id)) {
+          return
+        }
+        js = d.createElement(s)
+        js.id = id
+        js.src = '//connect.facebook.net/en_US/sdk.js'
+        fjs.parentNode.insertBefore(js, fjs)
+      })(document, 'script', 'facebook-jssdk')
+    }
+  },
 }
-
 </script>
 
 <style>
@@ -229,6 +210,7 @@ no-ssr {
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0; top: 0;
+  left: 0;
+  top: 0;
 }
 </style>
